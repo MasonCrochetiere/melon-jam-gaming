@@ -1,9 +1,17 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public enum MoveCoroutineType { PlayerForces, SpeedClamp, Gravity }
 public class PlayerController : MonoBehaviour
 {
+    Rigidbody2D rb;
+    InventoryManager inventory;
+
+    public Vector2 moveInput { get; private set; }
+    public bool jumpDown;
+
     [Header("Move Variables")]
     [SerializeField] float moveAcceleration = 100f;
     [SerializeField] float maxSpeed = 2f;
@@ -15,23 +23,28 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float airControlMultiplier = 0.4f;
 
-    float baseDrag;
+    [Header("Dash Variables")]
+    [SerializeField] float dashForce = 30f;
+    [Tooltip("Duration to disable gravity and max speed")]
+    [SerializeField] float dashDuration = 0.4f;
+    [Tooltip("We re-enable player forces shortly before the end of the dash to smooth the player out of it. " +
+        "This should be shorter than Dash Duration")]
+    [SerializeField] float dashMoveDisableDuration = 0.35f; 
+ 
     public bool moveActivated = true;
-
-    Rigidbody2D rb;
-
-    public Vector2 moveInput { get; private set; }
-    public bool jumpDown;
 
     public bool onGround = false;
 
-    InventoryManager inventory;
+    private Coroutine clampCoroutine;
+    public bool clampEnabled = true;
+
+    private Coroutine playerForcesCoroutine;
+    private Coroutine gravityCoroutine;
 
     // Start is called before the first frame update
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        baseDrag = rb.linearDamping;
 
         inventory = GetComponent<InventoryManager>();
     }
@@ -43,6 +56,8 @@ public class PlayerController : MonoBehaviour
 
         actions.Jump.performed += ctx => jumpDown = true;
         actions.Jump.canceled += ctx => jumpDown = false;
+
+        actions.Sprint.started += ctx => Dash();
     }
 
     private void FixedUpdate()
@@ -54,7 +69,6 @@ public class PlayerController : MonoBehaviour
             Move();
             CheckJump();
         }
-
     }
 
     void CheckJump()
@@ -93,8 +107,11 @@ public class PlayerController : MonoBehaviour
 
         // -------------------- CLAMP SPEED ----------------------- \\
 
-        // clamp to a max speed to keep the acceleration on the move without a big mess
-        rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, -speedClamp, speedClamp), rb.linearVelocityY);
+        if (clampEnabled)
+        {
+            // clamp to a max speed to keep the acceleration on the move without a big mess
+            rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, -speedClamp, speedClamp), rb.linearVelocityY);
+        }
     }
 
     public void SetMoveActivated(bool value)
@@ -104,5 +121,63 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = Vector3.zero;
         }
+    }
+
+    void Dash()
+    {
+        rb.linearVelocity = new Vector2(moveInput.x * dashForce, 0);
+
+        RunCoroutine(MoveCoroutineType.SpeedClamp, dashDuration);
+        RunCoroutine(MoveCoroutineType.Gravity, dashDuration);
+        RunCoroutine(MoveCoroutineType.PlayerForces, dashDuration - 0.05f);
+    }
+
+    public void RunCoroutine(MoveCoroutineType type, float reenableInSeconds)
+    {
+        switch (type)
+        {
+            case MoveCoroutineType.PlayerForces:
+                if (playerForcesCoroutine != null)
+                    StopCoroutine(playerForcesCoroutine);
+                playerForcesCoroutine = StartCoroutine(DisableMovement(reenableInSeconds));
+                break;
+            case MoveCoroutineType.SpeedClamp:
+                if (clampCoroutine != null)
+                    StopCoroutine(clampCoroutine);
+                clampCoroutine = StartCoroutine(DisableClamp(reenableInSeconds));
+                break;
+            case MoveCoroutineType.Gravity:
+                if (gravityCoroutine != null)
+                    StopCoroutine(gravityCoroutine);
+                gravityCoroutine = StartCoroutine(DisableGravity(reenableInSeconds));
+                break;
+        }
+    }
+
+    IEnumerator DisableClamp(float reenableInSeconds)
+    {
+        clampEnabled = false;
+
+        yield return new WaitForSeconds(reenableInSeconds);
+
+        clampEnabled = true;
+    }
+
+    IEnumerator DisableGravity(float reenableInSeconds)
+    {
+        rb.gravityScale = 0;
+
+        yield return new WaitForSeconds(reenableInSeconds);
+
+        rb.gravityScale = 1;
+    }
+
+    IEnumerator DisableMovement(float reenableInSeconds)
+    {
+        moveActivated = false;
+
+        yield return new WaitForSeconds(reenableInSeconds);
+
+        moveActivated = true;
     }
 }
