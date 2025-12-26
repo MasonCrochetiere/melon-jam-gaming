@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static UnityEngine.GraphicsBuffer;
 
 public enum MoveCoroutineType { PlayerForces, SpeedClamp, Gravity }
 public class PlayerController : MonoBehaviour
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour
     InventoryManager inventory;
 
     public Vector2 moveInput { get; private set; }
+    Vector2 lastPositiveMoveInput;
     public bool jumpDown;
 
     [Header("Move Variables")]
@@ -29,7 +31,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float dashDuration = 0.4f;
     [Tooltip("We re-enable player forces shortly before the end of the dash to smooth the player out of it. " +
         "This should be shorter than Dash Duration")]
-    [SerializeField] float dashMoveDisableDuration = 0.35f; 
+    [SerializeField] float dashMoveDisableDuration = 0.35f;
+
+    DashPoint dashPoint;
  
     public bool moveActivated = true;
 
@@ -51,7 +55,8 @@ public class PlayerController : MonoBehaviour
 
     public void initializeInput(InputSystem_Actions.PlayerActions actions)
     {
-        actions.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>(); // moveInput = 
+        actions.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>(); // moveInput =
+        actions.Move.performed += ctx => lastPositiveMoveInput = ctx.ReadValue<Vector2>();
         actions.Move.canceled += ctx => moveInput = Vector2.zero;
 
         actions.Jump.performed += ctx => jumpDown = true;
@@ -123,13 +128,36 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void SetDashPoint(DashPoint target)
+    {
+        dashPoint = target;
+        // call some event in here
+        // not sure if hard override method is best but it's okay for now
+    }
+
+    public void RemoveDashPoint(DashPoint target)
+    {
+        if (dashPoint == target)
+        {
+            dashPoint = null;
+            // call some event in here
+        }
+    }
+
     void Dash()
     {
-        rb.linearVelocity = new Vector2(moveInput.x * dashForce, 0);
+        if (dashPoint != null)
+        {
+            rb.linearVelocity = GetDashAngleFromPoint(dashPoint.transform.position) * dashForce;
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(lastPositiveMoveInput.x * dashForce, 0);
+        }      
 
         RunCoroutine(MoveCoroutineType.SpeedClamp, dashDuration);
         RunCoroutine(MoveCoroutineType.Gravity, dashDuration);
-        RunCoroutine(MoveCoroutineType.PlayerForces, dashDuration - 0.05f);
+        RunCoroutine(MoveCoroutineType.PlayerForces, dashMoveDisableDuration);
     }
 
     public void RunCoroutine(MoveCoroutineType type, float reenableInSeconds)
@@ -179,5 +207,38 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(reenableInSeconds);
 
         moveActivated = true;
+    }
+
+    Vector2 GetDashAngleFromPoint(Vector2 point)
+    {
+        Vector2 sourcePos = transform.position;
+        Vector2 targetPos = point;
+
+        float angle;
+
+        if (targetPos.x > sourcePos.x && targetPos.y > sourcePos.y)
+        {
+            // Target is upper-right -> 30°
+            angle = 30f;
+        }
+        else if (targetPos.x < sourcePos.x && targetPos.y > sourcePos.y)
+        {
+            // Target is upper-left -> 150°
+            angle = 150f;
+        }
+        else if (targetPos.x < sourcePos.x && targetPos.y < sourcePos.y)
+        {
+            // Target is lower-left -> 210°
+            angle = 210f;
+        }
+        else
+        {
+            // Target is lower-right -> 330°
+            angle = 330f;
+        }
+
+        // Convert degrees to radians and create unit vector
+        float radians = angle * Mathf.Deg2Rad;
+        return new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
     }
 }
