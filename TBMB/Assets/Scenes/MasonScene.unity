@@ -1537,9 +1537,12 @@ MonoBehaviour:
   groundFriction: 8
   airFriction: 2
   airControlMultiplier: 0.6
+  basePhysicsMaterial: {fileID: 6200000, guid: 2781397d60fbc5e4b899f5042006adf2, type: 2}
   dashForce: 30
   dashDuration: 0.2
   dashMoveDisableDuration: 0.1
+  ballPhysicsMaterial: {fileID: 6200000, guid: 6b88bf4292e15884a94d549f162e6ed0, type: 2}
+  minimumBallDuration: 0.6
   moveActivated: 1
   onGround: 0
   clampEnabled: 1
@@ -1559,7 +1562,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2781397d60fbc5e4b899f5042006adf2, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1593,7 +1596,7 @@ CircleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 2781397d60fbc5e4b899f5042006adf2, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

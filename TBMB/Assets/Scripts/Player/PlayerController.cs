@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float airControlMultiplier = 0.4f;
 
+    [SerializeField] PhysicsMaterial2D basePhysicsMaterial;
+
     [Header("Dash Variables")]
     [SerializeField] float dashForce = 30f;
     [Tooltip("Duration to disable gravity and max speed")]
@@ -33,6 +35,11 @@ public class PlayerController : MonoBehaviour
         "This should be shorter than Dash Duration")]
     [SerializeField] float dashMoveDisableDuration = 0.35f;
 
+    [Header("Ball Variables")]
+    [SerializeField] PhysicsMaterial2D ballPhysicsMaterial;
+    [SerializeField] float minimumBallDuration = 0.6f;
+
+    [Header("Game Variables [DO NOT CHANGE]")]
     DashPoint dashPoint;
  
     public bool moveActivated = true;
@@ -63,6 +70,9 @@ public class PlayerController : MonoBehaviour
         actions.Jump.canceled += ctx => jumpDown = false;
 
         actions.Sprint.started += ctx => Dash();
+
+        actions.Interact.started += ctx => StartBall();
+        actions.Interact.canceled += ctx => EndBall();
     }
 
     private void FixedUpdate()
@@ -158,6 +168,18 @@ public class PlayerController : MonoBehaviour
         RunCoroutine(MoveCoroutineType.SpeedClamp, dashDuration);
         RunCoroutine(MoveCoroutineType.Gravity, dashDuration);
         RunCoroutine(MoveCoroutineType.PlayerForces, dashMoveDisableDuration);
+    }
+
+    void StartBall()
+    {
+        rb.sharedMaterial = ballPhysicsMaterial;
+        moveActivated = false;
+    }
+
+    void EndBall()
+    {
+        rb.sharedMaterial = basePhysicsMaterial;
+        moveActivated = true;
     }
 
     public void RunCoroutine(MoveCoroutineType type, float reenableInSeconds)
