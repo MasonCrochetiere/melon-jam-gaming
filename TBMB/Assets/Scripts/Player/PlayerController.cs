@@ -5,10 +5,15 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [Header("Move Variables")]
-    [SerializeField] float moveSpeed = 7f;
+    [SerializeField] float moveAcceleration = 100f;
     [SerializeField] float maxSpeed = 2f;
 
     [SerializeField] float jumpVelocity = 7f;
+
+    [SerializeField] float groundFriction = 4f;
+    [SerializeField] float airFriction = 2f;
+
+    [SerializeField] float airControlMultiplier = 0.4f;
 
     float baseDrag;
     public bool moveActivated = true;
@@ -34,7 +39,7 @@ public class PlayerController : MonoBehaviour
     public void initializeInput(InputSystem_Actions.PlayerActions actions)
     {
         actions.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>(); // moveInput = 
-        actions.Move.canceled += ctx => moveInput = ctx.ReadValue<Vector2>();
+        actions.Move.canceled += ctx => moveInput = Vector2.zero;
 
         actions.Jump.performed += ctx => jumpDown = true;
         actions.Jump.canceled += ctx => jumpDown = false;
@@ -42,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        onGround = Physics2D.CircleCast(gameObject.transform.position, 0.45f, Vector2.down, 0.1f);
+        onGround = Physics2D.CircleCast(gameObject.transform.position, 0.5f, Vector2.down, 0.05f);
 
         if (moveActivated)
         {
@@ -74,12 +79,17 @@ public class PlayerController : MonoBehaviour
         // should be snappy but not jarring
         if ((moveInputValue.x > 0 && rb.linearVelocityX < 0) || (moveInputValue.x < 0 && rb.linearVelocityX > 0))
         {
-            rb.linearVelocity.Set(moveInputValue.x * moveSpeed, rb.linearVelocityY);
+            rb.linearVelocity.Set(moveInputValue.x * moveAcceleration, rb.linearVelocityY);
         }
         // -------------------- PLAYER MOVEMENT ----------------------- \\
 
         // doing the actual movement
-        rb.AddForce(moveInputValue * moveSpeed);
+        rb.AddForce(moveInputValue * moveAcceleration * (onGround ? 1 : airControlMultiplier));
+
+        Vector2 frictionForce = rb.linearVelocity;
+        frictionForce.y = 0;
+        frictionForce *= -1 * (onGround ? groundFriction : airFriction);
+        rb.AddForce(frictionForce);
 
         // -------------------- CLAMP SPEED ----------------------- \\
 
