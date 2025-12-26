@@ -20,11 +20,15 @@ public class PlayerController : MonoBehaviour
 
     public bool onGround = false;
 
+    InventoryManager inventory;
+
     // Start is called before the first frame update
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         baseDrag = rb.linearDamping;
+
+        inventory = GetComponent<InventoryManager>();
     }
 
     public void initializeInput(InputSystem_Actions.PlayerActions actions)
@@ -38,7 +42,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        onGround = Physics2D.CircleCast(gameObject.transform.position, 0.5f, Vector2.down, 0.05f);
+        onGround = Physics2D.CircleCast(gameObject.transform.position, 0.45f, Vector2.down, 0.1f);
 
         if (moveActivated)
         {
@@ -50,7 +54,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckJump()
     {
-        if (jumpDown && onGround)
+        if (jumpDown && onGround && inventory.CheckItem(ItemList.Jump))
         {
             rb.linearVelocityY = jumpVelocity;
 
