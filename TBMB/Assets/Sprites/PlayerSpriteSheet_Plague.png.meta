@@ -1,0 +1,715 @@
+fileFormatVersion: 2
+guid: 8f754d9930755484ab8d092264905f13
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8933243468395125097
+    second: PlayerSpriteSheet_Plague_0
+  - first:
+      213: 42076813047460821
+    second: PlayerSpriteSheet_Plague_1
+  - first:
+      213: -7661757373891679756
+    second: PlayerSpriteSheet_Plague_2
+  - first:
+      213: -2500543155910928753
+    second: PlayerSpriteSheet_Plague_3
+  - first:
+      213: 3664502898868479949
+    second: PlayerSpriteSheet_Plague_4
+  - first:
+      213: -3874112853213518095
+    second: PlayerSpriteSheet_Plague_5
+  - first:
+      213: -1025544007245009273
+    second: PlayerSpriteSheet_Plague_6
+  - first:
+      213: 2443991485625078753
+    second: PlayerSpriteSheet_Plague_7
+  - first:
+      213: -1249592246544347535
+    second: PlayerSpriteSheet_Plague_8
+  - first:
+      213: 8303403090325908406
+    second: PlayerSpriteSheet_Plague_9
+  - first:
+      213: -57465871253504863
+    second: PlayerSpriteSheet_Plague_10
+  - first:
+      213: 1630228898329526869
+    second: PlayerSpriteSheet_Plague_11
+  - first:
+      213: 3890925463262427739
+    second: PlayerSpriteSheet_Plague_12
+  - first:
+      213: -6903246877016583185
+    second: PlayerSpriteSheet_Plague_13
+  - first:
+      213: -8998596421817545469
+    second: PlayerSpriteSheet_Plague_14
+  - first:
+      213: 7282418797437148347
+    second: PlayerSpriteSheet_Plague_15
+  - first:
+      213: 9166769072206468225
+    second: PlayerSpriteSheet_Plague_16
+  - first:
+      213: -4131244010556046948
+    second: PlayerSpriteSheet_Plague_17
+  - first:
+      213: 8735541481803372954
+    second: PlayerSpriteSheet_Plague_18
+  - first:
+      213: -4463864828263484338
+    second: PlayerSpriteSheet_Plague_19
+  - first:
+      213: 2884446911252863616
+    second: PlayerSpriteSheet_Plague_20
+  - first:
+      213: 1603908552907376548
+    second: PlayerSpriteSheet_Plague_21
+  - first:
+      213: 5785694978206983408
+    second: PlayerSpriteSheet_Plague_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96915c9aa9149fb70800000000000000
+      internalID: 8933243468395125097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 127
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d379f673ac759000800000000000000
+      internalID: 42076813047460821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 127
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9e4fd1348fba590800000000000000
+      internalID: -7661757373891679756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 127
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8615668f394c4dd0800000000000000
+      internalID: -2500543155910928753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 127
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7e17d98fdead230800000000000000
+      internalID: 3664502898868479949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 127
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6ee6cc2e26c3ac0800000000000000
+      internalID: -3874112853213518095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 127
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e61a2b82984c1f0800000000000000
+      internalID: -1025544007245009273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 127
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e313ceae4dcae120800000000000000
+      internalID: 2443991485625078753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e44aee87e88aee0800000000000000
+      internalID: -1249592246544347535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 101
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bba1c90e1d9b3370800000000000000
+      internalID: 8303403090325908406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 95
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1acf9353817d33ff0800000000000000
+      internalID: -57465871253504863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 102
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5520283bb8cbf9610800000000000000
+      internalID: 1630228898329526869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 96
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a774508185ff530800000000000000
+      internalID: 3890925463262427739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 95
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe31a925a8db230a0800000000000000
+      internalID: -6903246877016583185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_14
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 95
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30dc6702b309e1380800000000000000
+      internalID: -8998596421817545469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_15
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 96
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc5ed6ff49501560800000000000000
+      internalID: 7282418797437148347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 63
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18457ee47e7e63f70800000000000000
+      internalID: 9166769072206468225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 63
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91c85ee57fdaa6c0800000000000000
+      internalID: -4131244010556046948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 63
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99549fd1b0ea3970800000000000000
+      internalID: 8735541481803372954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_19
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 31
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44bef9d69a2d02c0800000000000000
+      internalID: -4463864828263484338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a13beee2d970820800000000000000
+      internalID: 2884446911252863616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7414cb45a324610800000000000000
+      internalID: 1603908552907376548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4e9c2cdeaea4050800000000000000
+      internalID: 5785694978206983408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerSpriteSheet_Plague_0: 8933243468395125097
+      PlayerSpriteSheet_Plague_1: 42076813047460821
+      PlayerSpriteSheet_Plague_10: -57465871253504863
+      PlayerSpriteSheet_Plague_11: 1630228898329526869
+      PlayerSpriteSheet_Plague_12: 3890925463262427739
+      PlayerSpriteSheet_Plague_13: -6903246877016583185
+      PlayerSpriteSheet_Plague_14: -8998596421817545469
+      PlayerSpriteSheet_Plague_15: 7282418797437148347
+      PlayerSpriteSheet_Plague_16: 9166769072206468225
+      PlayerSpriteSheet_Plague_17: -4131244010556046948
+      PlayerSpriteSheet_Plague_18: 8735541481803372954
+      PlayerSpriteSheet_Plague_19: -4463864828263484338
+      PlayerSpriteSheet_Plague_2: -7661757373891679756
+      PlayerSpriteSheet_Plague_20: 2884446911252863616
+      PlayerSpriteSheet_Plague_21: 1603908552907376548
+      PlayerSpriteSheet_Plague_22: 5785694978206983408
+      PlayerSpriteSheet_Plague_3: -2500543155910928753
+      PlayerSpriteSheet_Plague_4: 3664502898868479949
+      PlayerSpriteSheet_Plague_5: -3874112853213518095
+      PlayerSpriteSheet_Plague_6: -1025544007245009273
+      PlayerSpriteSheet_Plague_7: 2443991485625078753
+      PlayerSpriteSheet_Plague_8: -1249592246544347535
+      PlayerSpriteSheet_Plague_9: 8303403090325908406
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
