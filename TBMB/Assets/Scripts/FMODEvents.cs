@@ -12,11 +12,13 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference footstep { get; private set; }
     [field: SerializeField] public EventReference itemCollect { get; private set; }
     [field: SerializeField] public EventReference jump { get; private set; }
+    [field: SerializeField] public EventReference dash { get; private set; }
     [field: SerializeField] public EventReference playerDeath { get; private set; }
     [field: SerializeField] public EventReference playerHurt { get; private set; }
 
     [field: Header("Level")]
     [field: SerializeField] public EventReference timeAlert { get; private set; }
+    [field: SerializeField] public EventReference glassShatter { get; private set; }
 
     [field: Header("UI")]
     [field: SerializeField] public EventReference buttonClick { get; private set; }

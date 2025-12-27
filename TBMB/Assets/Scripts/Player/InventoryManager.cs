@@ -23,6 +23,8 @@ public class InventoryManager : MonoBehaviour
         inventory[item] = true;
 
         unlockItemEvent.Invoke(item);
+
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.itemCollect);
     }
 
     public bool CheckItem(ItemList item)

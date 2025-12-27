@@ -277,6 +277,7 @@ public class PlayerController : MonoBehaviour
         RunCoroutine(MoveCoroutineType.PlayerForces, dashMoveDisableDuration);
 
         playerAnimationManager.playDashOverride(dashAngle);
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.dash);
     }
 
     void StartBall()

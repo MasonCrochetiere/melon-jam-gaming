@@ -79,6 +79,13 @@ MonoBehaviour:
       Data3: 732096897
       Data4: 1778690894
     Path: event:/SFX/Player/Jump
+  <dash>k__BackingField:
+    Guid:
+      Data1: 1374616984
+      Data2: 1340947467
+      Data3: 279306685
+      Data4: -1058399692
+    Path: event:/SFX/Player/Dash
   <playerDeath>k__BackingField:
     Guid:
       Data1: -1304729013
@@ -100,6 +107,13 @@ MonoBehaviour:
       Data3: 1714202276
       Data4: 194993893
     Path: event:/SFX/Level/TimeAlert
+  <glassShatter>k__BackingField:
+    Guid:
+      Data1: -2111672920
+      Data2: 1249585120
+      Data3: -1471144010
+      Data4: -1290594363
+    Path: event:/SFX/Level/GlassShatter
   <buttonClick>k__BackingField:
     Guid:
       Data1: 984766557
