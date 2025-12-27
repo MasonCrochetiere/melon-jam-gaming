@@ -1,15 +1,16 @@
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class DashPoint : MonoBehaviour
 {
     [SerializeField] GameObject dashAngleViewer;
+    [SerializeField] Animator dashAngleAnimator;
 
+    bool angleLocked = false;
     private void Start()
     {
         if (dashAngleViewer == null)
             return;
-
-        dashAngleViewer.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,17 +36,23 @@ public class DashPoint : MonoBehaviour
 
         if (value)
         {
-            dashAngleViewer.SetActive(true);
+            dashAngleAnimator.SetBool("PointActive", true);
         }
         else
         {
-            dashAngleViewer.SetActive(false);
+            dashAngleAnimator.SetBool("PointActive", false);
+            angleLocked = false;
         }
+    }
+
+    public void LockAngle()
+    {
+        angleLocked = true;
     }
 
     public void UpdateDashAngle(float angle)
     {
-        if (dashAngleViewer == null)
+        if (dashAngleViewer == null || angleLocked)
             return;
 
         dashAngleViewer.transform.rotation = Quaternion.Euler(0f, 0f, angle);
