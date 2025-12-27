@@ -1,13 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public class PauseScreenUI : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
+    [SerializeField] private EventReference buttonClick;
 
-    [Header("Input Actions")]
+    // Input Action Variables
     public InputActionAsset InputActions;
     private InputAction toggleMenu;
 
@@ -59,6 +61,7 @@ public class PauseScreenUI : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1;
         GameIsPaused = false;
+        AudioManager.instance.PlayeOneShot2D(buttonClick);
     }
 
     public void LoadMenu()
@@ -66,11 +69,13 @@ public class PauseScreenUI : MonoBehaviour
         Debug.Log("Loading Menu...");
         Time.timeScale = 1;
         SceneManager.LoadScene(0);
+        AudioManager.instance.PlayeOneShot2D(buttonClick);
     }
 
     public void QuitGame()
     {
         Debug.Log("Quitting Game...");
         Application.Quit();
+        AudioManager.instance.PlayeOneShot2D(buttonClick);
     }
 }
