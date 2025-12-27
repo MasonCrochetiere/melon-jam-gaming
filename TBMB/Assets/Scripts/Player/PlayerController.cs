@@ -77,10 +77,10 @@ public class PlayerController : MonoBehaviour
         actions.Jump.performed += ctx => JumpStart();
         actions.Jump.canceled += ctx => JumpEnd();
 
-        actions.Sprint.started += ctx => Dash();
+        actions.Dash.started += ctx => Dash();
 
-        actions.Interact.started += ctx => StartBall();
-        actions.Interact.canceled += ctx => EndBall();
+        actions.Ball.started += ctx => StartBall();
+        actions.Ball.canceled += ctx => EndBall();
     }
 
     private void FixedUpdate()
