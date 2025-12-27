@@ -3,7 +3,6 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
-using static UnityEngine.GraphicsBuffer;
 
 public enum MoveCoroutineType { PlayerForces, SpeedClamp, Gravity }
 public class PlayerController : MonoBehaviour
@@ -13,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerAnimationManager playerAnimationManager;
     public Vector2 moveInput { get; private set; }
     Vector2 lastPositiveMoveInput;
-    public bool jumpDown;
+    public bool jumpDownInput;
 
     [Header("Move Variables")]
     [SerializeField] float moveAcceleration = 100f;
@@ -27,6 +26,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float airControlMultiplier = 0.4f;
 
     [SerializeField] PhysicsMaterial2D basePhysicsMaterial;
+
+    [SerializeField] float coyoteTimeDuration = 0.2f;
+    float leaveGroundTime;
+    bool coyoteActive;
 
     [Header("Dash Variables")]
     [SerializeField] float dashForce = 30f;
@@ -68,8 +71,8 @@ public class PlayerController : MonoBehaviour
         actions.Move.performed += ctx => lastPositiveMoveInput = ctx.ReadValue<Vector2>();
         actions.Move.canceled += ctx => moveInput = Vector2.zero;
 
-        actions.Jump.performed += ctx => jumpDown = true;
-        actions.Jump.canceled += ctx => jumpDown = false;
+        actions.Jump.performed += ctx => JumpStart();
+        actions.Jump.canceled += ctx => JumpEnd();
 
         actions.Sprint.started += ctx => Dash();
 
@@ -98,17 +101,45 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimationManager.StartBagSwitchDelay();
         }
+
+        if (!onGround && lastGrounded)
+        {
+            leaveGroundTime = Time.time;
+
+            coyoteActive = true;
+        }
+
+        if (Time.time - leaveGroundTime > coyoteTimeDuration)
+        {
+            coyoteActive = false;
+        }
+    }
+
+    void JumpStart()
+    {
+        jumpDownInput = true;
+    }
+
+    void JumpEnd()
+    {
+        jumpDownInput = false;
+        if (rb.linearVelocityY > 0)
+        {
+            leaveGroundTime -= coyoteTimeDuration;
+        }
     }
 
     void CheckJump()
     {
-        if (jumpDown && onGround && inventory.CheckItem(ItemList.Jump))
+        if (jumpDownInput 
+            && (onGround || coyoteActive)  
+            && inventory.CheckItem(ItemList.Jump))
         {
             rb.linearVelocityY = jumpVelocity;
 
-            jumpDown = false;
-
             playerAnimationManager.UpdateJump(true);
+
+            coyoteActive = false;
         }
 
         if (rb.linearVelocityY < 0)

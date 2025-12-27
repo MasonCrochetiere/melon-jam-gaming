@@ -6702,6 +6702,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1638838041549968986, guid: 0d9dbe5530d077942935e2332f947c56, type: 3}
+      propertyPath: coyoteTimeDuration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3594302447845368196, guid: 0d9dbe5530d077942935e2332f947c56, type: 3}
       propertyPath: unlockItemEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

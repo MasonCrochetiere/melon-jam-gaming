@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TarodevController.PlayerController
   playerAnimationManager: {fileID: 3150608005670166938}
-  jumpDown: 0
+  jumpDownInput: 0
   moveAcceleration: 100
   maxSpeed: 10
   jumpVelocity: 12
@@ -360,6 +360,7 @@ MonoBehaviour:
   airFriction: 2
   airControlMultiplier: 0.6
   basePhysicsMaterial: {fileID: 6200000, guid: 2781397d60fbc5e4b899f5042006adf2, type: 2}
+  coyoteTimeDuration: 0.2
   dashForce: 30
   dashDuration: 0.2
   dashMoveDisableDuration: 0.1
