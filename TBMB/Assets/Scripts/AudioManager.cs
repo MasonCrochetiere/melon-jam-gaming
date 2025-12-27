@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("Found more than one Audio Manager in scene.");
+            Debug.LogError("Found more than one Audio Manager script in the scene.");
         }
         instance = this;
     }
