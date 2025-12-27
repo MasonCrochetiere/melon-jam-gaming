@@ -31,6 +31,9 @@ public class PlayerController : MonoBehaviour
     float leaveGroundTime;
     bool coyoteActive;
 
+    [SerializeField] float jumpBufferDuration = 0.2f;
+    float jumpPressedTime;
+
     [Header("Dash Variables")]
     [SerializeField] float dashForce = 30f;
     [Tooltip("Duration to disable gravity and max speed")]
@@ -118,11 +121,14 @@ public class PlayerController : MonoBehaviour
     void JumpStart()
     {
         jumpDownInput = true;
+
+        jumpPressedTime = Time.time;
     }
 
     void JumpEnd()
     {
         jumpDownInput = false;
+
         if (rb.linearVelocityY > 0)
         {
             leaveGroundTime -= coyoteTimeDuration;
@@ -131,7 +137,7 @@ public class PlayerController : MonoBehaviour
 
     void CheckJump()
     {
-        if (jumpDownInput 
+        if ((jumpDownInput || Time.time - jumpPressedTime < jumpBufferDuration)
             && (onGround || coyoteActive)  
             && inventory.CheckItem(ItemList.Jump))
         {
@@ -140,6 +146,7 @@ public class PlayerController : MonoBehaviour
             playerAnimationManager.UpdateJump(true);
 
             coyoteActive = false;
+            jumpPressedTime += jumpBufferDuration;
         }
 
         if (rb.linearVelocityY < 0)
