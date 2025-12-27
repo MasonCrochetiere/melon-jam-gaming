@@ -99,6 +99,8 @@ public class PlayerController : MonoBehaviour
         {
             SetRotation(Time.fixedDeltaTime);
         }
+
+        UpdateDashPoint();
     }
 
     void GroundCheck()
@@ -208,7 +210,11 @@ public class PlayerController : MonoBehaviour
 
     public void SetDashPoint(DashPoint target)
     {
+        if (dashPoint != null)
+            dashPoint.ShowDashAngle(false);
+
         dashPoint = target;
+        dashPoint.ShowDashAngle(true);
         // call some event in here
         // not sure if hard override method is best but it's okay for now
     }
@@ -217,15 +223,24 @@ public class PlayerController : MonoBehaviour
     {
         if (dashPoint == target)
         {
+            dashPoint.ShowDashAngle(false);
             dashPoint = null;
             // call some event in here
+        }
+    }
+
+    void UpdateDashPoint()
+    {
+        if (dashPoint != null)
+        {
+            dashAngle = GetDashAngleFromPoint(dashPoint.transform.position);
+            dashPoint.UpdateDashAngle(dashAngle);
         }
     }
 
     public float dashAngle = 0f;
     void Dash()
     {
-         
         if (dashPoint != null)
         {
             dashAngle = GetDashAngleFromPoint(dashPoint.transform.position);
