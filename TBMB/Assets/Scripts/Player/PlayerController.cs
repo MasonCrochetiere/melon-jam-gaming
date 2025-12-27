@@ -132,6 +132,8 @@ public class PlayerController : MonoBehaviour
         jumpDownInput = true;
 
         jumpPressedTime = Time.time;
+
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.jump);
     }
 
     void JumpEnd()

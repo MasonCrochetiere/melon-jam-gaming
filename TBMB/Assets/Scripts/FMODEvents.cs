@@ -12,7 +12,6 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference footstep { get; private set; }
     [field: SerializeField] public EventReference itemCollect { get; private set; }
     [field: SerializeField] public EventReference jump { get; private set; }
-    [field: SerializeField] public EventReference maskCollect { get; private set; }
     [field: SerializeField] public EventReference playerDeath { get; private set; }
     [field: SerializeField] public EventReference playerHurt { get; private set; }
 
