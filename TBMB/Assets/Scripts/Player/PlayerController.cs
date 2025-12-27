@@ -50,6 +50,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Game Variables [DO NOT CHANGE]")]
     DashPoint dashPoint;
+    bool dashAvailable;
  
     public bool moveActivated = true;
 
@@ -124,6 +125,11 @@ public class PlayerController : MonoBehaviour
         if (Time.time - leaveGroundTime > coyoteTimeDuration)
         {
             coyoteActive = false;
+        }
+
+        if (onGround)
+        {
+            dashAvailable = true;
         }
     }
 
@@ -219,6 +225,8 @@ public class PlayerController : MonoBehaviour
         dashPoint.ShowDashAngle(true);
         // call some event in here
         // not sure if hard override method is best but it's okay for now
+
+        dashAvailable = true;
     }
 
     public void RemoveDashPoint(DashPoint target)
@@ -243,6 +251,9 @@ public class PlayerController : MonoBehaviour
     public float dashAngle = 0f;
     void Dash()
     {
+        if (!dashAvailable)
+            return;
+
         if (dashPoint != null)
         {
             // Convert degrees to radians and create unit vector
@@ -255,6 +266,8 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = new Vector2(lastPositiveMoveInput.x * dashForce, 0);
 
             dashAngle = 90f;
+
+            dashAvailable = false;
         }      
 
         RunCoroutine(MoveCoroutineType.SpeedClamp, dashDuration);
