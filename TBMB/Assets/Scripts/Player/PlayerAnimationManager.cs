@@ -261,5 +261,8 @@ public class PlayerAnimationManager : MonoBehaviour
         SetMaskType(MaskType.Bag);
     }
 
-
+    public void PlayFootstep()
+    {
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.footstep);
+    }
 }

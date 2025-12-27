@@ -132,8 +132,6 @@ public class PlayerController : MonoBehaviour
         jumpDownInput = true;
 
         jumpPressedTime = Time.time;
-
-        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.jump);
     }
 
     void JumpEnd()
@@ -158,6 +156,8 @@ public class PlayerController : MonoBehaviour
 
             coyoteActive = false;
             jumpPressedTime += jumpBufferDuration;
+
+            AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.jump);
         }
 
         if (rb.linearVelocityY < 0)
