@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 22df87dafee97ff4687d3130262662cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 407415922573140713
+    second: PlayerSpriteSheet_Glass_0
+  - first:
+      213: 6583421752809129945
+    second: PlayerSpriteSheet_Glass_1
+  - first:
+      213: -7889324910339017542
+    second: PlayerSpriteSheet_Glass_2
+  - first:
+      213: 3574580624967567140
+    second: PlayerSpriteSheet_Glass_3
+  - first:
+      213: -1563917181507340822
+    second: PlayerSpriteSheet_Glass_4
+  - first:
+      213: 936756864719960575
+    second: PlayerSpriteSheet_Glass_5
+  - first:
+      213: 8190080738032416765
+    second: PlayerSpriteSheet_Glass_6
+  - first:
+      213: 4244270992116614894
+    second: PlayerSpriteSheet_Glass_7
+  - first:
+      213: 6406779317481576445
+    second: PlayerSpriteSheet_Glass_8
+  - first:
+      213: 8865140622087115526
+    second: PlayerSpriteSheet_Glass_9
+  - first:
+      213: 1001054247415985878
+    second: PlayerSpriteSheet_Glass_10
+  - first:
+      213: -6083343820414867769
+    second: PlayerSpriteSheet_Glass_11
+  - first:
+      213: 3070839194443155857
+    second: PlayerSpriteSheet_Glass_12
+  - first:
+      213: -1363770289087596389
+    second: PlayerSpriteSheet_Glass_13
+  - first:
+      213: -347729506884640352
+    second: PlayerSpriteSheet_Glass_14
+  - first:
+      213: -7940221879979718056
+    second: PlayerSpriteSheet_Glass_15
+  - first:
+      213: 457168472603374602
+    second: PlayerSpriteSheet_Glass_16
+  - first:
+      213: -7700340687557086087
+    second: PlayerSpriteSheet_Glass_17
+  - first:
+      213: -8291541868867228454
+    second: PlayerSpriteSheet_Glass_18
+  - first:
+      213: -839153961949308779
+    second: PlayerSpriteSheet_Glass_19
+  - first:
+      213: 1395614936075640786
+    second: PlayerSpriteSheet_Glass_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 159
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e26fcc7f9e67a500800000000000000
+      internalID: 407415922573140713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 159
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d784c624330d5b50800000000000000
+      internalID: 6583421752809129945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 159
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab43a912bcc738290800000000000000
+      internalID: -7889324910339017542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 159
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4278f24b3267b9130800000000000000
+      internalID: 3574580624967567140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 159
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5ff120c99db4ae0800000000000000
+      internalID: -1563917181507340822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 159
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9ba82c767000d00800000000000000
+      internalID: 936756864719960575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 159
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7f030d90309a170800000000000000
+      internalID: 8190080738032416765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 159
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee60b9feafda6ea30800000000000000
+      internalID: 4244270992116614894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 127
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df71fcc38d379e850800000000000000
+      internalID: 6406779317481576445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 133
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603536f1d6e470b70800000000000000
+      internalID: 8865140622087115526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_10
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 127
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d63022c88574ed00800000000000000
+      internalID: 1001054247415985878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 134
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6aa99b60f939ba0800000000000000
+      internalID: -6083343820414867769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_12
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 128
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19981233affcd9a20800000000000000
+      internalID: 3070839194443155857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 127
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98b3bbc52ae21de0800000000000000
+      internalID: -1363770289087596389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_14
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 127
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a128381bdd9c2bf0800000000000000
+      internalID: -347729506884640352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_15
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 128
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a460ee44aaec190800000000000000
+      internalID: -7940221879979718056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 95
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04380cbd40385600800000000000000
+      internalID: 457168472603374602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_17
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 95
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9743cac51f4e22590800000000000000
+      internalID: -7700340687557086087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_18
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 95
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adce3e9c9968eec80800000000000000
+      internalID: -8291541868867228454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_19
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 63
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598562aeae9ba54f0800000000000000
+      internalID: -839153961949308779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Glass_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 129
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df940cd3683e5310800000000000000
+      internalID: 1395614936075640786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PlayerSpriteSheet_Glass_0: 407415922573140713
+      PlayerSpriteSheet_Glass_1: 6583421752809129945
+      PlayerSpriteSheet_Glass_10: 1001054247415985878
+      PlayerSpriteSheet_Glass_11: -6083343820414867769
+      PlayerSpriteSheet_Glass_12: 3070839194443155857
+      PlayerSpriteSheet_Glass_13: -1363770289087596389
+      PlayerSpriteSheet_Glass_14: -347729506884640352
+      PlayerSpriteSheet_Glass_15: -7940221879979718056
+      PlayerSpriteSheet_Glass_16: 457168472603374602
+      PlayerSpriteSheet_Glass_17: -7700340687557086087
+      PlayerSpriteSheet_Glass_18: -8291541868867228454
+      PlayerSpriteSheet_Glass_19: -839153961949308779
+      PlayerSpriteSheet_Glass_2: -7889324910339017542
+      PlayerSpriteSheet_Glass_20: 1395614936075640786
+      PlayerSpriteSheet_Glass_3: 3574580624967567140
+      PlayerSpriteSheet_Glass_4: -1563917181507340822
+      PlayerSpriteSheet_Glass_5: 936756864719960575
+      PlayerSpriteSheet_Glass_6: 8190080738032416765
+      PlayerSpriteSheet_Glass_7: 4244270992116614894
+      PlayerSpriteSheet_Glass_8: 6406779317481576445
+      PlayerSpriteSheet_Glass_9: 8865140622087115526
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
