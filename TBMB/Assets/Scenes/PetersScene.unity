@@ -4360,6 +4360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseScreenUI
   pauseMenuUI: {fileID: 84797042}
+  InputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!1 &948176966
 GameObject:
   m_ObjectHideFlags: 0

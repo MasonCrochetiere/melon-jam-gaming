@@ -1,16 +1,36 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class PauseScreenUI : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-
     public GameObject pauseMenuUI;
 
-    // Handles player input
+    [Header("Input Actions")]
+    public InputActionAsset InputActions;
+    private InputAction toggleMenu;
+
+    // Initialize Input Actions
+    private void OnEnable()
+    {
+        InputActions.FindActionMap("UI").Enable();
+    }
+
+    private void OnDisable()
+    {
+        InputActions.FindActionMap("UI").Disable();
+    }
+
+    private void Awake()
+    {
+        toggleMenu = InputSystem.actions.FindAction("ToggleMenu");
+    }
+
+    // Handles Player Input
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (toggleMenu.WasPressedThisFrame())
         {
 
             if (GameIsPaused)
