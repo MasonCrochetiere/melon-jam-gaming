@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 using static UnityEngine.GraphicsBuffer;
 
 public enum MoveCoroutineType { PlayerForces, SpeedClamp, Gravity }
@@ -9,7 +10,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
     InventoryManager inventory;
-
+    [SerializeField] PlayerAnimationManager playerAnimationManager;
     public Vector2 moveInput { get; private set; }
     Vector2 lastPositiveMoveInput;
     public bool jumpDown;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
     public bool moveActivated = true;
 
     public bool onGround = false;
+    bool lastGrounded;
 
     private Coroutine clampCoroutine;
     public bool clampEnabled = true;
@@ -77,12 +79,24 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        onGround = Physics2D.CircleCast(gameObject.transform.position, 0.5f, Vector2.down, 0.05f);
+        GroundCheck();
 
         if (moveActivated)
         {
             Move();
             CheckJump();
+        }
+    }
+
+    void GroundCheck()
+    {
+        lastGrounded = onGround;
+        onGround = Physics2D.CircleCast(gameObject.transform.position, 0.5f, Vector2.down, 0.05f);
+        playerAnimationManager.setOnGround(onGround);
+
+        if (onGround && !lastGrounded)
+        {
+            playerAnimationManager.StartBagSwitchDelay();
         }
     }
 
@@ -93,7 +107,14 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocityY = jumpVelocity;
 
             jumpDown = false;
+
+            playerAnimationManager.UpdateJump(true);
         }
+
+        if (rb.linearVelocityY < 0)
+        {
+            playerAnimationManager.UpdateJump(false);
+        }    
     }
 
     void Move()
@@ -127,6 +148,8 @@ public class PlayerController : MonoBehaviour
             // clamp to a max speed to keep the acceleration on the move without a big mess
             rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, -speedClamp, speedClamp), rb.linearVelocityY);
         }
+
+        playerAnimationManager.setMoveValueX(moveInputValue.x);
     }
 
     public void SetMoveActivated(bool value)
@@ -154,32 +177,47 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public float dashAngle = 0f;
     void Dash()
     {
+         
         if (dashPoint != null)
         {
-            rb.linearVelocity = GetDashAngleFromPoint(dashPoint.transform.position) * dashForce;
+            dashAngle = GetDashAngleFromPoint(dashPoint.transform.position);
+
+            // Convert degrees to radians and create unit vector
+            float radians = dashAngle * Mathf.Deg2Rad;
+
+            rb.linearVelocity = new Vector2(Mathf.Cos(radians), Mathf.Sin(radians)) * dashForce;
         }
         else
         {
             rb.linearVelocity = new Vector2(lastPositiveMoveInput.x * dashForce, 0);
+
+            dashAngle = 90f;
         }      
 
         RunCoroutine(MoveCoroutineType.SpeedClamp, dashDuration);
         RunCoroutine(MoveCoroutineType.Gravity, dashDuration);
         RunCoroutine(MoveCoroutineType.PlayerForces, dashMoveDisableDuration);
+
+        playerAnimationManager.playDashOverride(dashAngle);
     }
 
     void StartBall()
     {
         rb.sharedMaterial = ballPhysicsMaterial;
         moveActivated = false;
+
+        playerAnimationManager.playBallOverride();
     }
 
     void EndBall()
     {
         rb.sharedMaterial = basePhysicsMaterial;
         moveActivated = true;
+
+        playerAnimationManager.setAnimationOverride(false);
     }
 
     public void RunCoroutine(MoveCoroutineType type, float reenableInSeconds)
@@ -231,7 +269,7 @@ public class PlayerController : MonoBehaviour
         moveActivated = true;
     }
 
-    Vector2 GetDashAngleFromPoint(Vector2 point)
+    float GetDashAngleFromPoint(Vector2 point)
     {
         Vector2 sourcePos = transform.position;
         Vector2 targetPos = point;
@@ -259,8 +297,6 @@ public class PlayerController : MonoBehaviour
             angle = 330f;
         }
 
-        // Convert degrees to radians and create unit vector
-        float radians = angle * Mathf.Deg2Rad;
-        return new Vector2(Mathf.Cos(radians), Mathf.Sin(radians));
+        return angle;
     }
 }
