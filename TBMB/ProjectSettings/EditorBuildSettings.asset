@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8c5130d8d2755574db14b1d79ba8c063
   - enabled: 1
-    path: Assets/Scenes/PetersScene.unity
-    guid: e2caee98622bdc64684ba20e67b8889a
+    path: Assets/Scenes/MasonScene.unity
+    guid: 8e478aabf0dba874ca8632cd41ada952
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

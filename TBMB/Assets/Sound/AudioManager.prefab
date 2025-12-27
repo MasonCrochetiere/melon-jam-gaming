@@ -79,13 +79,6 @@ MonoBehaviour:
       Data3: 732096897
       Data4: 1778690894
     Path: event:/SFX/Player/Jump
-  <maskCollect>k__BackingField:
-    Guid:
-      Data1: -1378028073
-      Data2: 1107595624
-      Data3: -902641232
-      Data4: -1831860631
-    Path: event:/SFX/Player/MaskCollect
   <playerDeath>k__BackingField:
     Guid:
       Data1: -1304729013
@@ -114,6 +107,13 @@ MonoBehaviour:
       Data3: -282699378
       Data4: 1590511825
     Path: event:/SFX/UI/ButtonClick
+  <buttonHover>k__BackingField:
+    Guid:
+      Data1: -1733271881
+      Data2: 1102391108
+      Data3: -1554866038
+      Data4: -377683325
+    Path: event:/SFX/UI/ButtonHover
 --- !u!1 &2076454370227927848
 GameObject:
   m_ObjectHideFlags: 0

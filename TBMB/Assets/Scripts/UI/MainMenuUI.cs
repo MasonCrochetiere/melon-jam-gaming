@@ -16,4 +16,9 @@ public class MainMenuUI : MonoBehaviour
         Application.Quit();
         AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.buttonClick);
     }
+
+    public void ButtonHover()
+    {
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.buttonHover);
+    }
 }
