@@ -1842,6 +1842,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
   itemType: 2
+  onPickup:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &549466744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2779,6 +2782,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
   itemType: 3
+  onPickup:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &794082799
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3545,6 +3551,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pickup
   itemType: 1
+  onPickup:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!61 &1028231359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6766,6 +6775,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5332281787122868128, guid: 25769a588f04768499b7ea07e1e9267b, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: be57c099d0571ea429a866d540f4aba4, type: 2}
     - target: {fileID: 8195132948398409968, guid: 25769a588f04768499b7ea07e1e9267b, type: 3}
       propertyPath: m_Name
       value: JumpPickup
