@@ -151,37 +151,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Bag_0
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 95
-        width: 20
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a88b4c46cfd5ca00800000000000000
-      internalID: 776272553567815845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: PlayerSpriteSheet_Bag_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 95
-        width: 21
-        height: 29
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -198,12 +176,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 95
-        width: 22
-        height: 29
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -220,12 +198,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_3
       rect:
         serializedVersion: 2
-        x: 101
-        y: 95
-        width: 22
-        height: 30
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -242,12 +220,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_4
       rect:
         serializedVersion: 2
-        x: 133
-        y: 95
-        width: 22
-        height: 30
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -264,12 +242,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 95
-        width: 21
-        height: 30
+        x: 160
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,12 +264,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_6
       rect:
         serializedVersion: 2
-        x: 197
-        y: 95
-        width: 20
-        height: 30
+        x: 192
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -308,12 +286,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_7
       rect:
         serializedVersion: 2
-        x: 228
-        y: 95
-        width: 21
-        height: 29
+        x: 224
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -330,12 +308,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_8
       rect:
         serializedVersion: 2
-        x: 4
-        y: 63
-        width: 22
-        height: 28
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -352,12 +330,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_9
       rect:
         serializedVersion: 2
-        x: 35
-        y: 63
-        width: 24
-        height: 29
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -374,12 +352,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_10
       rect:
         serializedVersion: 2
-        x: 67
-        y: 64
-        width: 25
-        height: 29
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,12 +374,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_11
       rect:
         serializedVersion: 2
-        x: 100
-        y: 63
-        width: 22
-        height: 28
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -418,12 +396,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_12
       rect:
         serializedVersion: 2
-        x: 133
-        y: 63
-        width: 20
-        height: 29
+        x: 128
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -440,12 +418,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_13
       rect:
         serializedVersion: 2
-        x: 165
-        y: 64
-        width: 21
-        height: 29
+        x: 160
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -462,12 +440,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_14
       rect:
         serializedVersion: 2
-        x: 5
-        y: 31
-        width: 22
-        height: 27
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -484,12 +462,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_15
       rect:
         serializedVersion: 2
-        x: 37
-        y: 31
-        width: 23
-        height: 31
+        x: 32
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -506,12 +484,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_16
       rect:
         serializedVersion: 2
-        x: 69
-        y: 31
-        width: 23
-        height: 30
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,12 +506,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Bag_17
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 23
-        height: 29
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -546,11 +524,187 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Bag_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095297632b4426643a637371f023491f
+      internalID: -700541302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Bag_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fe8385166b2d34c930b711e5093caa
+      internalID: 370387428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Bag_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f5cfd2e603f7f1468e72c7bcb038757
+      internalID: -1112639261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Bag_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d86ca342f8e1a642a82334037d43768
+      internalID: -1549538955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Bag_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d463cb49ec8655343a55c49b481d1681
+      internalID: 33607676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Bag_22
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76712028a0d3ff64699de34d241bb50a
+      internalID: -904310483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Bag_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e662a7995c7392848bb0651de28c88e5
+      internalID: -97511571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Bag_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ab62c5676f66ca4384e0c8ff350e175
+      internalID: -39216630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c4126def36f9ef84da581a1c3c3b92cc
     internalID: 0
     vertices: []
     indices: 
@@ -558,9 +712,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":6.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlayerSpriteSheet_Bag_0: 776272553567815845
+      PlayerSpriteSheet_Bag_0: -1549538955
       PlayerSpriteSheet_Bag_1: -3873690249939819034
       PlayerSpriteSheet_Bag_10: 1268754907679061795
       PlayerSpriteSheet_Bag_11: 6743585430362437536
@@ -570,7 +726,14 @@ TextureImporter:
       PlayerSpriteSheet_Bag_15: 5349747426376400876
       PlayerSpriteSheet_Bag_16: 375726540548162956
       PlayerSpriteSheet_Bag_17: 7722815595513675975
+      PlayerSpriteSheet_Bag_18: -700541302
+      PlayerSpriteSheet_Bag_19: 370387428
       PlayerSpriteSheet_Bag_2: 2013084505938939137
+      PlayerSpriteSheet_Bag_20: -1112639261
+      PlayerSpriteSheet_Bag_21: 33607676
+      PlayerSpriteSheet_Bag_22: -904310483
+      PlayerSpriteSheet_Bag_23: -97511571
+      PlayerSpriteSheet_Bag_24: -39216630
       PlayerSpriteSheet_Bag_3: -8447377832912230383
       PlayerSpriteSheet_Bag_4: 8230765252121559618
       PlayerSpriteSheet_Bag_5: -7741712600117524963

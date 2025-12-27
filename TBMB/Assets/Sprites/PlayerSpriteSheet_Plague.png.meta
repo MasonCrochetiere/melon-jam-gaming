@@ -169,12 +169,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 127
-        width: 26
-        height: 28
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_1
       rect:
         serializedVersion: 2
-        x: 38
-        y: 127
-        width: 25
-        height: 28
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -213,12 +213,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_2
       rect:
         serializedVersion: 2
-        x: 70
-        y: 127
-        width: 25
-        height: 28
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_3
       rect:
         serializedVersion: 2
-        x: 102
-        y: 127
-        width: 25
-        height: 29
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -257,12 +257,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_4
       rect:
         serializedVersion: 2
-        x: 134
-        y: 127
-        width: 25
-        height: 29
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_5
       rect:
         serializedVersion: 2
-        x: 166
-        y: 127
-        width: 25
-        height: 29
+        x: 160
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -301,12 +301,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_6
       rect:
         serializedVersion: 2
-        x: 197
-        y: 127
-        width: 26
-        height: 29
+        x: 192
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -323,12 +323,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_7
       rect:
         serializedVersion: 2
-        x: 228
-        y: 127
-        width: 27
-        height: 28
+        x: 224
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -345,12 +345,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_8
       rect:
         serializedVersion: 2
-        x: 4
-        y: 95
-        width: 27
-        height: 27
+        x: 0
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -367,12 +367,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_9
       rect:
         serializedVersion: 2
-        x: 35
-        y: 101
-        width: 6
-        height: 6
+        x: 32
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -389,12 +389,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_10
       rect:
         serializedVersion: 2
-        x: 38
-        y: 95
-        width: 25
-        height: 28
+        x: 64
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -411,12 +411,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_11
       rect:
         serializedVersion: 2
-        x: 67
-        y: 102
-        width: 6
-        height: 6
+        x: 96
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -433,12 +433,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_12
       rect:
         serializedVersion: 2
-        x: 70
-        y: 96
-        width: 25
-        height: 28
+        x: 128
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -455,12 +455,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_13
       rect:
         serializedVersion: 2
-        x: 100
-        y: 95
-        width: 27
-        height: 27
+        x: 160
+        y: 128
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -477,12 +477,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_14
       rect:
         serializedVersion: 2
-        x: 134
-        y: 95
-        width: 25
-        height: 28
+        x: 0
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -499,12 +499,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_15
       rect:
         serializedVersion: 2
-        x: 166
+        x: 32
         y: 96
-        width: 25
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,12 +521,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_16
       rect:
         serializedVersion: 2
-        x: 6
-        y: 63
-        width: 25
-        height: 26
+        x: 64
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -543,12 +543,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_17
       rect:
         serializedVersion: 2
-        x: 38
-        y: 63
-        width: 25
-        height: 30
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -565,12 +565,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_18
       rect:
         serializedVersion: 2
-        x: 70
-        y: 63
-        width: 25
-        height: 29
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -587,12 +587,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_19
       rect:
         serializedVersion: 2
-        x: 5
-        y: 31
-        width: 26
-        height: 29
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -609,12 +609,12 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_20
       rect:
         serializedVersion: 2
-        x: 70
-        y: 0
-        width: 18
-        height: 33
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -631,20 +631,20 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_21
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 25
-        height: 25
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4a7414cb45a324610800000000000000
-      internalID: 1603908552907376548
+      spriteID: eed0773b3694b5540b6441501291bb18
+      internalID: -1916152724
       vertices: []
       indices: 
       edges: []
@@ -653,20 +653,64 @@ TextureImporter:
       name: PlayerSpriteSheet_Plague_22
       rect:
         serializedVersion: 2
-        x: 38
+        x: 32
         y: 0
-        width: 25
-        height: 29
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0f4e9c2cdeaea4050800000000000000
-      internalID: 5785694978206983408
+      spriteID: c6793bb65b916134b9d6facdd5e8ce34
+      internalID: 1411561483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b6bd6add1365b45a61ea20748b5907
+      internalID: 1862336753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerSpriteSheet_Plague_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e637d395537b2499b19822c0346df8
+      internalID: 1959730585
       vertices: []
       indices: 
       edges: []
@@ -675,7 +719,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f7c278b9dd628304185487a3ba9d7d6b
     internalID: 0
     vertices: []
     indices: 
@@ -683,7 +727,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":6.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       PlayerSpriteSheet_Plague_0: 8933243468395125097
       PlayerSpriteSheet_Plague_1: 42076813047460821
@@ -699,8 +745,10 @@ TextureImporter:
       PlayerSpriteSheet_Plague_19: -4463864828263484338
       PlayerSpriteSheet_Plague_2: -7661757373891679756
       PlayerSpriteSheet_Plague_20: 2884446911252863616
-      PlayerSpriteSheet_Plague_21: 1603908552907376548
-      PlayerSpriteSheet_Plague_22: 5785694978206983408
+      PlayerSpriteSheet_Plague_21: -1916152724
+      PlayerSpriteSheet_Plague_22: 1411561483
+      PlayerSpriteSheet_Plague_23: 1862336753
+      PlayerSpriteSheet_Plague_24: 1959730585
       PlayerSpriteSheet_Plague_3: -2500543155910928753
       PlayerSpriteSheet_Plague_4: 3664502898868479949
       PlayerSpriteSheet_Plague_5: -3874112853213518095

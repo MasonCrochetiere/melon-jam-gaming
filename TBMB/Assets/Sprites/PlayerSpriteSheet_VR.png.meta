@@ -1,67 +1,70 @@
 fileFormatVersion: 2
-guid: 95dc8ba661090814ca3995b42d5bf06c
+guid: 403a1a7898b91b34bb69f701ca1c2715
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2672862376065315878
-    second: PlayerSpriteSheet_Glasses_0
+      213: -2914244081595466255
+    second: PlayerSpriteSheet_VR_0
   - first:
-      213: 470818131501188402
-    second: PlayerSpriteSheet_Glasses_1
+      213: -9116860738469086864
+    second: PlayerSpriteSheet_VR_1
   - first:
-      213: -3250194262939475989
-    second: PlayerSpriteSheet_Glasses_2
+      213: 1149980770440353116
+    second: PlayerSpriteSheet_VR_2
   - first:
-      213: 3212961886233967602
-    second: PlayerSpriteSheet_Glasses_3
+      213: -8280891676286971429
+    second: PlayerSpriteSheet_VR_3
   - first:
-      213: -8060484182281347527
-    second: PlayerSpriteSheet_Glasses_4
+      213: 5104953400941799374
+    second: PlayerSpriteSheet_VR_4
   - first:
-      213: 5738030138735501836
-    second: PlayerSpriteSheet_Glasses_5
+      213: -2887706886893902430
+    second: PlayerSpriteSheet_VR_5
   - first:
-      213: 448139076449241419
-    second: PlayerSpriteSheet_Glasses_6
+      213: 6744169923922883080
+    second: PlayerSpriteSheet_VR_6
   - first:
-      213: -2124283654774649546
-    second: PlayerSpriteSheet_Glasses_7
+      213: -1011931811645721502
+    second: PlayerSpriteSheet_VR_7
   - first:
-      213: -5341317762850386199
-    second: PlayerSpriteSheet_Glasses_8
+      213: 3479314917486510977
+    second: PlayerSpriteSheet_VR_8
   - first:
-      213: -4791926656246218980
-    second: PlayerSpriteSheet_Glasses_9
+      213: 3130021127261357986
+    second: PlayerSpriteSheet_VR_9
   - first:
-      213: -6567133600802928698
-    second: PlayerSpriteSheet_Glasses_10
+      213: -509273759367601152
+    second: PlayerSpriteSheet_VR_10
   - first:
-      213: -1312650081779274908
-    second: PlayerSpriteSheet_Glasses_11
+      213: 8334685707183572496
+    second: PlayerSpriteSheet_VR_11
   - first:
-      213: -4492649159299061681
-    second: PlayerSpriteSheet_Glasses_12
+      213: 1936892520216265635
+    second: PlayerSpriteSheet_VR_12
   - first:
-      213: -7253029129191778131
-    second: PlayerSpriteSheet_Glasses_13
+      213: 7491832348638171662
+    second: PlayerSpriteSheet_VR_13
   - first:
-      213: 3825600140761688776
-    second: PlayerSpriteSheet_Glasses_14
+      213: 1349367912698434205
+    second: PlayerSpriteSheet_VR_14
   - first:
-      213: -2691987282780716356
-    second: PlayerSpriteSheet_Glasses_15
+      213: -6506608499086820739
+    second: PlayerSpriteSheet_VR_15
   - first:
-      213: -4351566205371668943
-    second: PlayerSpriteSheet_Glasses_16
+      213: 289485692873731335
+    second: PlayerSpriteSheet_VR_16
   - first:
-      213: 810424833589110543
-    second: PlayerSpriteSheet_Glasses_17
+      213: 1650701391204610827
+    second: PlayerSpriteSheet_VR_17
   - first:
-      213: -3845325089303237403
-    second: PlayerSpriteSheet_Glasses_18
+      213: 5015379234202570415
+    second: PlayerSpriteSheet_VR_18
   - first:
-      213: -7745145498802905175
-    second: PlayerSpriteSheet_Glasses_19
+      213: 3968740370133605816
+    second: PlayerSpriteSheet_VR_19
+  - first:
+      213: -1752345126248998012
+    second: PlayerSpriteSheet_VR_20
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -157,7 +160,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_0
+      name: PlayerSpriteSheet_VR_0
       rect:
         serializedVersion: 2
         x: 0
@@ -172,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62431ea6b2ae71520800000000000000
-      internalID: 2672862376065315878
+      spriteID: 1fdb7b7b2768e87d0800000000000000
+      internalID: -2914244081595466255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_1
+      name: PlayerSpriteSheet_VR_1
       rect:
         serializedVersion: 2
         x: 32
@@ -194,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23501f9989ea88600800000000000000
-      internalID: 470818131501188402
+      spriteID: 07938d826776a7180800000000000000
+      internalID: -9116860738469086864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_2
+      name: PlayerSpriteSheet_VR_2
       rect:
         serializedVersion: 2
         x: 64
@@ -216,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: befda72c98df4e2d0800000000000000
-      internalID: -3250194262939475989
+      spriteID: c5590a8fa6d85ff00800000000000000
+      internalID: 1149980770440353116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_3
+      name: PlayerSpriteSheet_VR_3
       rect:
         serializedVersion: 2
         x: 96
@@ -238,14 +241,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fb38d100dbb69c20800000000000000
-      internalID: 3212961886233967602
+      spriteID: bd11d6bf4ec541d80800000000000000
+      internalID: -8280891676286971429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_4
+      name: PlayerSpriteSheet_VR_4
       rect:
         serializedVersion: 2
         x: 128
@@ -260,14 +263,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93e177da758632090800000000000000
-      internalID: -8060484182281347527
+      spriteID: ec7ee0a221078d640800000000000000
+      internalID: 5104953400941799374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_5
+      name: PlayerSpriteSheet_VR_5
       rect:
         serializedVersion: 2
         x: 160
@@ -282,14 +285,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c02a0d1820491af40800000000000000
-      internalID: 5738030138735501836
+      spriteID: 2a56d37d2edcce7d0800000000000000
+      internalID: -2887706886893902430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_6
+      name: PlayerSpriteSheet_VR_6
       rect:
         serializedVersion: 2
         x: 192
@@ -304,14 +307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b498abd9d1c183600800000000000000
-      internalID: 448139076449241419
+      spriteID: 802fb4c40da189d50800000000000000
+      internalID: 6744169923922883080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_7
+      name: PlayerSpriteSheet_VR_7
       rect:
         serializedVersion: 2
         x: 224
@@ -326,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 63d0dfa55470582e0800000000000000
-      internalID: -2124283654774649546
+      spriteID: 26470f5f065e4f1f0800000000000000
+      internalID: -1011931811645721502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_8
+      name: PlayerSpriteSheet_VR_8
       rect:
         serializedVersion: 2
         x: 0
@@ -348,14 +351,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ee81d05bc3dfd5b0800000000000000
-      internalID: -5341317762850386199
+      spriteID: 1834086bb72094030800000000000000
+      internalID: 3479314917486510977
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_9
+      name: PlayerSpriteSheet_VR_9
       rect:
         serializedVersion: 2
         x: 32
@@ -370,14 +373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1ff7b84818af7db0800000000000000
-      internalID: -4791926656246218980
+      spriteID: 2a781e5b1a1107b20800000000000000
+      internalID: 3130021127261357986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_10
+      name: PlayerSpriteSheet_VR_10
       rect:
         serializedVersion: 2
         x: 64
@@ -392,14 +395,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c70c93c8cadcd4a0800000000000000
-      internalID: -6567133600802928698
+      spriteID: 004677fc632bee8f0800000000000000
+      internalID: -509273759367601152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_11
+      name: PlayerSpriteSheet_VR_11
       rect:
         serializedVersion: 2
         x: 96
@@ -414,14 +417,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46ba82194b788cde0800000000000000
-      internalID: -1312650081779274908
+      spriteID: 016c33bdd70caa370800000000000000
+      internalID: 8334685707183572496
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_12
+      name: PlayerSpriteSheet_VR_12
       rect:
         serializedVersion: 2
         x: 128
@@ -436,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f48a5878467e6a1c0800000000000000
-      internalID: -4492649159299061681
+      spriteID: 3a30a9b2c7931ea10800000000000000
+      internalID: 1936892520216265635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_13
+      name: PlayerSpriteSheet_VR_13
       rect:
         serializedVersion: 2
         x: 160
@@ -458,14 +461,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da896f86f60185b90800000000000000
-      internalID: -7253029129191778131
+      spriteID: e02db51e3d558f760800000000000000
+      internalID: 7491832348638171662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_14
+      name: PlayerSpriteSheet_VR_14
       rect:
         serializedVersion: 2
         x: 0
@@ -480,14 +483,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8cae8c22f03471530800000000000000
-      internalID: 3825600140761688776
+      spriteID: d9253b3a7fae9b210800000000000000
+      internalID: 1349367912698434205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_15
+      name: PlayerSpriteSheet_VR_15
       rect:
         serializedVersion: 2
         x: 32
@@ -502,14 +505,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb28cfd34d324aad0800000000000000
-      internalID: -2691987282780716356
+      spriteID: d7a74672b02e3b5a0800000000000000
+      internalID: -6506608499086820739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_16
+      name: PlayerSpriteSheet_VR_16
       rect:
         serializedVersion: 2
         x: 64
@@ -524,14 +527,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1362a3087912c93c0800000000000000
-      internalID: -4351566205371668943
+      spriteID: 70deb4334b5740400800000000000000
+      internalID: 289485692873731335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_17
+      name: PlayerSpriteSheet_VR_17
       rect:
         serializedVersion: 2
         x: 0
@@ -546,14 +549,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f07eb33a7153f3b00800000000000000
-      internalID: 810424833589110543
+      spriteID: b037ef46b2878e610800000000000000
+      internalID: 1650701391204610827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_18
+      name: PlayerSpriteSheet_VR_18
       rect:
         serializedVersion: 2
         x: 0
@@ -568,14 +571,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ecee266439a2aac0800000000000000
-      internalID: -3845325089303237403
+      spriteID: faec38447d43a9540800000000000000
+      internalID: 5015379234202570415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_19
+      name: PlayerSpriteSheet_VR_19
       rect:
         serializedVersion: 2
         x: 32
@@ -590,14 +593,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9af13225437b38490800000000000000
-      internalID: -7745145498802905175
+      spriteID: 8bdd09fd65cc31730800000000000000
+      internalID: 3968740370133605816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_20
+      name: PlayerSpriteSheet_VR_20
       rect:
         serializedVersion: 2
         x: 64
@@ -610,16 +613,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dbdc8108dec0546469a46906a3e3a87f
-      internalID: -132414608
+      spriteID: 48b9a0a546b6ea7e0800000000000000
+      internalID: -1752345126248998012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_21
+      name: PlayerSpriteSheet_VR_21
       rect:
         serializedVersion: 2
         x: 0
@@ -634,14 +637,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45b089e414f1e1d49bdba0e5b6ded43a
-      internalID: 528340851
+      spriteID: 51bcbdd396824ad4182788ff5ceaa508
+      internalID: -1113107200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_22
+      name: PlayerSpriteSheet_VR_22
       rect:
         serializedVersion: 2
         x: 32
@@ -656,14 +659,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4674fdcfdf494b94fa5998f0307bf63c
-      internalID: -1650559311
+      spriteID: 0df236cd510102b479ef91ab6492a14d
+      internalID: -1808076392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_23
+      name: PlayerSpriteSheet_VR_23
       rect:
         serializedVersion: 2
         x: 64
@@ -678,14 +681,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e421b5f24cbec3044b9f1392920f5b16
-      internalID: 2127834895
+      spriteID: 5c30fdde75c590c44962dfc70dab142b
+      internalID: -524661486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PlayerSpriteSheet_Glasses_24
+      name: PlayerSpriteSheet_VR_24
       rect:
         serializedVersion: 2
         x: 96
@@ -700,8 +703,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85081f4d6d1761f4887bbc3664d8975d
-      internalID: 1877532544
+      spriteID: f8269f345188fdd4aa2597ebab387060
+      internalID: 743410782
       vertices: []
       indices: 
       edges: []
@@ -710,7 +713,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0693c528384997e4fa87e227592ade5e
+    spriteID: 1775a7e6f9365cf47a67fde060356de1
     internalID: 0
     vertices: []
     indices: 
@@ -722,31 +725,31 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":8.0,"y":6.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      PlayerSpriteSheet_Glasses_0: 2672862376065315878
-      PlayerSpriteSheet_Glasses_1: 470818131501188402
-      PlayerSpriteSheet_Glasses_10: -6567133600802928698
-      PlayerSpriteSheet_Glasses_11: -1312650081779274908
-      PlayerSpriteSheet_Glasses_12: -4492649159299061681
-      PlayerSpriteSheet_Glasses_13: -7253029129191778131
-      PlayerSpriteSheet_Glasses_14: 3825600140761688776
-      PlayerSpriteSheet_Glasses_15: -2691987282780716356
-      PlayerSpriteSheet_Glasses_16: -4351566205371668943
-      PlayerSpriteSheet_Glasses_17: 810424833589110543
-      PlayerSpriteSheet_Glasses_18: -3845325089303237403
-      PlayerSpriteSheet_Glasses_19: -7745145498802905175
-      PlayerSpriteSheet_Glasses_2: -3250194262939475989
-      PlayerSpriteSheet_Glasses_20: -132414608
-      PlayerSpriteSheet_Glasses_21: 528340851
-      PlayerSpriteSheet_Glasses_22: -1650559311
-      PlayerSpriteSheet_Glasses_23: 2127834895
-      PlayerSpriteSheet_Glasses_24: 1877532544
-      PlayerSpriteSheet_Glasses_3: 3212961886233967602
-      PlayerSpriteSheet_Glasses_4: -8060484182281347527
-      PlayerSpriteSheet_Glasses_5: 5738030138735501836
-      PlayerSpriteSheet_Glasses_6: 448139076449241419
-      PlayerSpriteSheet_Glasses_7: -2124283654774649546
-      PlayerSpriteSheet_Glasses_8: -5341317762850386199
-      PlayerSpriteSheet_Glasses_9: -4791926656246218980
+      PlayerSpriteSheet_VR_0: -2914244081595466255
+      PlayerSpriteSheet_VR_1: -9116860738469086864
+      PlayerSpriteSheet_VR_10: -509273759367601152
+      PlayerSpriteSheet_VR_11: 8334685707183572496
+      PlayerSpriteSheet_VR_12: 1936892520216265635
+      PlayerSpriteSheet_VR_13: 7491832348638171662
+      PlayerSpriteSheet_VR_14: 1349367912698434205
+      PlayerSpriteSheet_VR_15: -6506608499086820739
+      PlayerSpriteSheet_VR_16: 289485692873731335
+      PlayerSpriteSheet_VR_17: 1650701391204610827
+      PlayerSpriteSheet_VR_18: 5015379234202570415
+      PlayerSpriteSheet_VR_19: 3968740370133605816
+      PlayerSpriteSheet_VR_2: 1149980770440353116
+      PlayerSpriteSheet_VR_20: -1752345126248998012
+      PlayerSpriteSheet_VR_21: -1113107200
+      PlayerSpriteSheet_VR_22: -1808076392
+      PlayerSpriteSheet_VR_23: -524661486
+      PlayerSpriteSheet_VR_24: 743410782
+      PlayerSpriteSheet_VR_3: -8280891676286971429
+      PlayerSpriteSheet_VR_4: 5104953400941799374
+      PlayerSpriteSheet_VR_5: -2887706886893902430
+      PlayerSpriteSheet_VR_6: 6744169923922883080
+      PlayerSpriteSheet_VR_7: -1011931811645721502
+      PlayerSpriteSheet_VR_8: 3479314917486510977
+      PlayerSpriteSheet_VR_9: 3130021127261357986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
