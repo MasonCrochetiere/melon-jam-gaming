@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     InventoryManager inventory;
     [SerializeField] PlayerAnimationManager playerAnimationManager;
+    [SerializeField] GameObject rotationBase;
     public Vector2 moveInput { get; private set; }
     Vector2 lastPositiveMoveInput;
     public bool jumpDownInput;
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
     [Header("Ball Variables")]
     [SerializeField] PhysicsMaterial2D ballPhysicsMaterial;
     [SerializeField] float minimumBallDuration = 0.6f;
+    [SerializeField] float rotationSpeed = 0.1f;
 
     [Header("Game Variables [DO NOT CHANGE]")]
     DashPoint dashPoint;
@@ -91,6 +93,11 @@ public class PlayerController : MonoBehaviour
         {
             Move();
             CheckJump();
+        }
+
+        if (rb.sharedMaterial == ballPhysicsMaterial)
+        {
+            SetRotation(Time.fixedDeltaTime);
         }
     }
 
@@ -336,5 +343,30 @@ public class PlayerController : MonoBehaviour
         }
 
         return angle;
+    }
+
+    void SetRotation(float time)
+    {
+        Vector2 movement = rb.linearVelocity * time;
+        float distance = movement.magnitude * rotationSpeed;
+        float angle = distance * (180 / Mathf.PI) / 0.5f;
+
+        rotationBase.transform.localRotation = Quaternion.Euler(Vector3.forward * (angle * GetRawXVelocity() * -1)) * rotationBase.transform.localRotation;
+    }
+
+    float GetRawXVelocity()
+    {
+        if (rb.linearVelocityX > 0)
+        {
+            return 1;
+        }
+        else if (rb.linearVelocityY < 0)
+        {
+            return -1;
+        }
+        else
+        {
+            return rb.linearVelocityX;
+        }
     }
 }

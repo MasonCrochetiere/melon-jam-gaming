@@ -29,12 +29,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111742693336595175}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.391, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 670576618065216154}
+  m_Father: {fileID: 6040261827013376455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8531671789178141667
 SpriteRenderer:
@@ -166,6 +166,38 @@ MonoBehaviour:
   dashLibrary: {fileID: 7108339969198208228, guid: 4e7b19810ef00c648a0f8ad65d31ebcf, type: 3}
   ballLibrary: {fileID: 7108339969198208228, guid: 8b540ed318b1315438a264fc69c73fee, type: 3}
   noneLibrary: {fileID: 7108339969198208228, guid: 6841a71c52a78a94583f0c027c3a2046, type: 3}
+--- !u!1 &1984532445838727688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6040261827013376455}
+  m_Layer: 0
+  m_Name: Rotator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6040261827013376455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984532445838727688}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.3909998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6958835025555578305}
+  m_Father: {fileID: 670576618065216154}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5739719714172424194
 GameObject:
   m_ObjectHideFlags: 0
@@ -201,7 +233,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6958835025555578305}
+  - {fileID: 6040261827013376455}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7567208131677572945
@@ -352,6 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TarodevController.PlayerController
   playerAnimationManager: {fileID: 3150608005670166938}
+  rotationBase: {fileID: 1984532445838727688}
   jumpDownInput: 0
   moveAcceleration: 100
   maxSpeed: 10
@@ -361,6 +394,7 @@ MonoBehaviour:
   airControlMultiplier: 0.6
   basePhysicsMaterial: {fileID: 6200000, guid: 2781397d60fbc5e4b899f5042006adf2, type: 2}
   coyoteTimeDuration: 0.2
+  jumpBufferDuration: 0.2
   dashForce: 30
   dashDuration: 0.2
   dashMoveDisableDuration: 0.1
