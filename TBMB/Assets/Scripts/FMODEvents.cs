@@ -20,6 +20,7 @@ public class FMODEvents : MonoBehaviour
 
     [field: Header("UI")]
     [field: SerializeField] public EventReference buttonClick { get; private set; }
+    [field: SerializeField] public EventReference buttonHover { get; private set; }
 
     [field: Header("Dialogue")]
 
