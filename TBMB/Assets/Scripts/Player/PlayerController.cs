@@ -243,8 +243,6 @@ public class PlayerController : MonoBehaviour
     {
         if (dashPoint != null)
         {
-            dashAngle = GetDashAngleFromPoint(dashPoint.transform.position);
-
             // Convert degrees to radians and create unit vector
             float radians = dashAngle * Mathf.Deg2Rad;
 

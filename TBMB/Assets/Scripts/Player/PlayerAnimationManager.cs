@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D.Animation;
 
@@ -14,6 +15,14 @@ public class PlayerAnimationManager : MonoBehaviour
     [SerializeField] SpriteLibraryAsset dashLibrary;
     [SerializeField] SpriteLibraryAsset ballLibrary;
     [SerializeField] SpriteLibraryAsset noneLibrary;
+
+    [SerializeField] List<Material> particleMaterials;
+    [SerializeField] ParticleSystem maskSwitchParticle;
+    ParticleSystemRenderer particleRenderer;
+
+    [SerializeField] List<MaskTrailItem> trailItems;
+    int unlockIndex = 0;
+
     MaskType currentType;
     Coroutine maskSwitchCoroutine;
 
@@ -35,6 +44,13 @@ public class PlayerAnimationManager : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteLibrary = GetComponent<SpriteLibrary>();
         resolver = GetComponent<SpriteResolver>();
+
+        particleRenderer = maskSwitchParticle.GetComponent<ParticleSystemRenderer>();
+
+        foreach (MaskTrailItem item in trailItems)
+        {
+            item.gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -61,6 +77,31 @@ public class PlayerAnimationManager : MonoBehaviour
         if (currentType == MaskType.None)
             return;
 
+        // Play the particle of the old mask flying off
+        if (currentType != maskType)
+        {            
+            switch (currentType)
+            {
+                case MaskType.Bag:
+                    particleRenderer.material = particleMaterials[0];
+                    break;
+                case MaskType.Jump:
+                    particleRenderer.material = particleMaterials[1];
+                    break;
+                case MaskType.Dash:
+                    particleRenderer.material = particleMaterials[2];
+                    break;
+                case MaskType.Ball:
+                    particleRenderer.material = particleMaterials[3];
+                    break;
+                case MaskType.None:
+                    particleRenderer.material = particleMaterials[4];
+                    break;
+            }
+            maskSwitchParticle.Play();
+        }
+
+        // Set the new mask by using the sprite library and resolver.
         switch (maskType)
         {
             case MaskType.Bag:
@@ -84,6 +125,25 @@ public class PlayerAnimationManager : MonoBehaviour
 
         resolver.enabled = false;
         resolver.enabled = true;
+
+        // Update the trail inventory accordingly
+        foreach (MaskTrailItem item in trailItems)
+        {
+            if (item.type == maskType && item.gameObject.activeSelf)
+            {
+                item.SetType(currentType);
+                break;
+            }
+        }
+
+        currentType = maskType;
+    }
+
+    public void OnItemUnlocked(ItemList item)
+    {
+        trailItems[unlockIndex].gameObject.SetActive(true);
+
+        unlockIndex++;
     }
 
     public void StartBagSwitchDelay()
@@ -200,4 +260,6 @@ public class PlayerAnimationManager : MonoBehaviour
 
         SetMaskType(MaskType.Bag);
     }
+
+
 }
