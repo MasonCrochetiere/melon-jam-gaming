@@ -221,7 +221,8 @@ public class PlayerAnimationManager : MonoBehaviour
 
     void EndDashOverride()
     {
-        setAnimationOverride(false);
+        if (!ballOverride)
+            setAnimationOverride(false);
     }
 
     public void playBallOverride()
