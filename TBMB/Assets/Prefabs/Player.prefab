@@ -160,7 +160,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimationManager
   DashAnimationDuration: 0.25
-  delayBeforeBag: 1.5
   bagLibrary: {fileID: 7108339969198208228, guid: 74575560c56491f43bf20448df02e4d6, type: 3}
   jumpLibrary: {fileID: 7108339969198208228, guid: 1237555506dbb4f419553740763666d9, type: 3}
   dashLibrary: {fileID: 7108339969198208228, guid: 4e7b19810ef00c648a0f8ad65d31ebcf, type: 3}
@@ -182,6 +181,7 @@ MonoBehaviour:
   footstepParticle: {fileID: 720008052654453542}
   landingParticle: {fileID: 2075124965834579672}
   bounceParticle: {fileID: 1005493636473687897}
+  lastRotation: 0
 --- !u!1 &1984532445838727688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1017,8 @@ MonoBehaviour:
   ballPhysicsMaterial: {fileID: 6200000, guid: 6b88bf4292e15884a94d549f162e6ed0, type: 2}
   minimumBallDuration: 0.6
   rotationSpeed: 0.1
+  auraAcceleration: 110
+  auraMaxSpeed: 17
   respawnDelay: 0.8
   glueMultiplier: 0.5
   moveActivated: 1
@@ -1053,6 +1055,18 @@ MonoBehaviour:
       - m_Target: {fileID: 3150608005670166938}
         m_TargetAssemblyTypeName: PlayerAnimationManager, Assembly-CSharp
         m_MethodName: OnItemUnlocked
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1638838041549968986}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: ItemGet
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

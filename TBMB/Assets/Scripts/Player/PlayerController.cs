@@ -48,6 +48,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float minimumBallDuration = 0.6f;
     [SerializeField] float rotationSpeed = 0.1f;
 
+    [Header("Aura Variables")]
+    [SerializeField] float auraAcceleration;
+    [SerializeField] float auraMaxSpeed;
+
     [Header("Hazard Variables")]
     [SerializeField] float respawnDelay = 0.8f;
     [Tooltip("The player's speed is multiplied by this number")]
@@ -480,9 +484,9 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = Vector3.zero;
         transform.position = respawnPoint;
 
-        RunCoroutine(MoveCoroutineType.SpeedClamp, 4);
-        RunCoroutine(MoveCoroutineType.Gravity, 4);
-        RunCoroutine(MoveCoroutineType.PlayerForces, 4);
+        RunCoroutine(MoveCoroutineType.SpeedClamp, 7);
+        RunCoroutine(MoveCoroutineType.Gravity, 7);
+        RunCoroutine(MoveCoroutineType.PlayerForces, 7);
 
         playerAnimationManager.lastRotation = 180f;
         playerAnimationManager.PlayKill();
@@ -493,5 +497,14 @@ public class PlayerController : MonoBehaviour
     {
         playerAnimationManager.setMoveValueX(-1);
         playerAnimationManager.lastRotation = 180f;
+    }
+
+    public void ItemGet(ItemList item)
+    {
+        if (item == ItemList.Aura)
+        {
+            maxSpeed = auraMaxSpeed;
+            moveAcceleration = auraAcceleration;
+        }
     }
 }
