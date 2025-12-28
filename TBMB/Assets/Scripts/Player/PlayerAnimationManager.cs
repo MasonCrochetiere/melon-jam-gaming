@@ -24,6 +24,9 @@ public class PlayerAnimationManager : MonoBehaviour
     int unlockIndex = 0;
     [SerializeField] float trailSwitchDelay = 0.1f;
 
+    [SerializeField] ParticleSystem footstepParticle;
+    [SerializeField] ParticleSystem landingParticle;
+ 
     MaskType currentType;
     Coroutine maskSwitchCoroutine;
 
@@ -269,6 +272,13 @@ public class PlayerAnimationManager : MonoBehaviour
     public void PlayFootstep()
     {
         AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.footstep);
+        footstepParticle.Play();
+    }
+
+    public void PlayLanding()
+    {
+        // need audio manager
+        landingParticle.Play();
     }
 
     public IEnumerator SwitchParticleWithTrail(float delay, MaskTrailItem item)

@@ -113,6 +113,7 @@ public class PlayerController : MonoBehaviour
         if (onGround && !lastGrounded)
         {
             playerAnimationManager.StartBagSwitchDelay();
+            playerAnimationManager.PlayLanding();
         }
 
         if (!onGround && lastGrounded)
