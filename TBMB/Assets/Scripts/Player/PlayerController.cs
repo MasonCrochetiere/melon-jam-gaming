@@ -48,8 +48,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float minimumBallDuration = 0.6f;
     [SerializeField] float rotationSpeed = 0.1f;
 
-    [Header("Death Variables")]
+    [Header("Hazard Variables")]
     [SerializeField] float respawnDelay = 0.8f;
+    [Tooltip("The player's speed is multiplied by this number")]
+    [SerializeField] float glueMultiplier = 0.5f;
 
     [Header("Game Variables [DO NOT CHANGE]")]
     DashPoint dashPoint;
@@ -444,7 +446,19 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(Respawn(respawnDelay));
 
         playerAnimationManager.PlayKill();
+
+        // death sound probably goes in here rather than anywhere else
+        // make sure the sound can only play one at a time since otherwise it'll spam unfortunately
     }
+
+    public void GluePlayer()
+    {
+        rb.linearVelocity *= glueMultiplier;
+
+        // glue sound probably goes in here
+        // make sure the sound can only play one at a time since otherwise it'll spam unfortunately
+    }
+
 
     IEnumerator Respawn(float delay)
     {
