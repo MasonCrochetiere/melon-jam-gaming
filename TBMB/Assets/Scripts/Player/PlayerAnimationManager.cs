@@ -284,9 +284,9 @@ public class PlayerAnimationManager : MonoBehaviour
         maskSwitchParticle.GetParticles(particles);
 
         item.sprite.enabled = true;
-        item.transform.position = particles[0].position;
-        item.transform.rotation = Quaternion.Euler(0, 0, particles[0].rotation);
-        item.rb.linearVelocity = particles[0].velocity;
+        item.maskRB.transform.position = particles[0].position;
+        item.maskRB.transform.rotation = Quaternion.Euler(0, 0, particles[0].rotation);
+        item.maskRB.linearVelocity = particles[0].velocity;
 
         ParticleSystem.Particle p = particles[0];
         p.remainingLifetime = 0;

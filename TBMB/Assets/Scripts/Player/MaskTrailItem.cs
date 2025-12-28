@@ -4,16 +4,14 @@ using UnityEngine;
 public class MaskTrailItem : MonoBehaviour
 {
     public MaskType type;
-    public SpriteRenderer sprite { get; private set; }
-    public Rigidbody2D rb;
+    [SerializeField] public SpriteRenderer sprite;
+    [SerializeField] public Rigidbody2D maskRB;
 
     [SerializeField] List<Sprite> maskSprites;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
-        rb = GetComponent<Rigidbody2D>();
     }
 
     public void SetType(MaskType type)
