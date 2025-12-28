@@ -125,6 +125,7 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimationManager.StartBagSwitchDelay();
             playerAnimationManager.PlayLanding();
+            AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.playerLand);
         }
 
         if (!onGround && lastGrounded)
@@ -446,6 +447,7 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(Respawn(respawnDelay));
 
         playerAnimationManager.PlayKill();
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.playerDeath);
 
         // death sound probably goes in here rather than anywhere else
         // make sure the sound can only play one at a time since otherwise it'll spam unfortunately

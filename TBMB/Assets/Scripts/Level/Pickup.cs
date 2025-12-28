@@ -17,6 +17,7 @@ public class Pickup : MonoBehaviour
             picked = true;
 
             onPickup.Invoke();
+            AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.glassShatter);
         }
     }
 }

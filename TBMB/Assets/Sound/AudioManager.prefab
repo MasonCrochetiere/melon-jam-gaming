@@ -51,20 +51,6 @@ MonoBehaviour:
       Data3: 399446439
       Data4: -144630382
     Path: event:/Music/LevelMusic
-  <levelIntro>k__BackingField:
-    Guid:
-      Data1: -1639344837
-      Data2: 1144529790
-      Data3: -24134998
-      Data4: 2028540219
-    Path: event:/Music/LevelIntro
-  <levelOutro>k__BackingField:
-    Guid:
-      Data1: 1955933106
-      Data2: 1286786267
-      Data3: -1222696831
-      Data4: -1345952198
-    Path: event:/Music/LevelOutro
   <menuMusic>k__BackingField:
     Guid:
       Data1: 833144412
@@ -114,20 +100,13 @@ MonoBehaviour:
       Data3: -1190950987
       Data4: -347745128
     Path: event:/SFX/Player/PlayerDeath
-  <playerHurt>k__BackingField:
+  <playerLand>k__BackingField:
     Guid:
-      Data1: 681677795
-      Data2: 1079058535
-      Data3: -1190950987
-      Data4: -347745128
-    Path: event:/SFX/Player/PlayerDeath
-  <timeAlert>k__BackingField:
-    Guid:
-      Data1: -760927113
-      Data2: 1228677357
-      Data3: 1714202276
-      Data4: 194993893
-    Path: event:/SFX/Level/TimeAlert
+      Data1: -1239989749
+      Data2: 1340720667
+      Data3: 2079909549
+      Data4: -644414861
+    Path: event:/SFX/Player/PlayerLand
   <glassShatter>k__BackingField:
     Guid:
       Data1: -2111672920

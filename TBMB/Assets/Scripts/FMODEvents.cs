@@ -6,8 +6,6 @@ public class FMODEvents : MonoBehaviour
 {
     [field: Header("Music")]
     [field: SerializeField] public EventReference levelMusic { get; private set; }
-    [field: SerializeField] public EventReference levelIntro { get; private set; }
-    [field: SerializeField] public EventReference levelOutro { get; private set; }
     [field: SerializeField] public EventReference menuMusic { get; private set; }
 
     [field: Header("Ambience")]
@@ -19,10 +17,9 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference jump { get; private set; }
     [field: SerializeField] public EventReference dash { get; private set; }
     [field: SerializeField] public EventReference playerDeath { get; private set; }
-    [field: SerializeField] public EventReference playerHurt { get; private set; }
+    [field: SerializeField] public EventReference playerLand { get; private set; }
 
     [field: Header("Level")]
-    [field: SerializeField] public EventReference timeAlert { get; private set; }
     [field: SerializeField] public EventReference glassShatter { get; private set; }
 
     [field: Header("UI")]
