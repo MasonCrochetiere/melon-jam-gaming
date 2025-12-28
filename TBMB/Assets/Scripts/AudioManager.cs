@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
 
     private Bus masterBus;
 
-    private Bus musicBus;
+    public Bus musicBus;
 
     private Bus SFXBus;
 
