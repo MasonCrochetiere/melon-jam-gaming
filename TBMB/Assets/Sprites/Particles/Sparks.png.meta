@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 637a78970254d8344923a8fdfce45210
+guid: f320b17a4f77b7041baf8a6acc09cda1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1349180431371488363
-    second: Camera_0
+      213: -4539016973228772116
+    second: Sparks_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,45 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Camera_0
+      name: Sparks_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6c4ecd347049b210800000000000000
-      internalID: 1349180431371488363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Camera_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e1fbc404486108499faa6cad8561045
-      internalID: 341352533
+      spriteID: ce4fa319c1c2201c0800000000000000
+      internalID: -4539016973228772116
       vertices: []
       indices: 
       edges: []
@@ -147,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 47a10565a3d3bb94a8f3b6af3c498e71
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -155,12 +133,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Camera_0: 1349180431371488363
-      Camera_1: 341352533
+      Sparks_0: -4539016973228772116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
