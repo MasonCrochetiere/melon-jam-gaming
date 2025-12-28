@@ -21,13 +21,14 @@ public class Patrol : MonoBehaviour
         {
             targetPoint = targetPoint == pointA ? pointB : pointA;
 
+            Vector3 currentRotation = transform.rotation.eulerAngles;
             if (targetPoint == pointA)
             {
-                transform.rotation = Quaternion.Euler(0, 180f, 0);
+                transform.rotation = Quaternion.Euler(currentRotation.x, 180f, currentRotation.z);
             }
             else
             {
-                transform.rotation = Quaternion.Euler(0, 0f, 0);
+                transform.rotation = Quaternion.Euler(currentRotation.x, 0f, currentRotation.z);
             }
         }
     }
