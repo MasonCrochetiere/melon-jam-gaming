@@ -401,4 +401,12 @@ public class PlayerController : MonoBehaviour
             return rb.linearVelocityX;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (rb.sharedMaterial == ballPhysicsMaterial)
+        {
+            playerAnimationManager.PlayBounce(collision.contacts[0].point, Quaternion.Euler(collision.contacts[0].normal));
+        }
+    }
 }

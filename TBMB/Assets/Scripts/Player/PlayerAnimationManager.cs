@@ -26,6 +26,7 @@ public class PlayerAnimationManager : MonoBehaviour
 
     [SerializeField] ParticleSystem footstepParticle;
     [SerializeField] ParticleSystem landingParticle;
+    [SerializeField] ParticleSystem bounceParticle;
  
     MaskType currentType;
     Coroutine maskSwitchCoroutine;
@@ -279,6 +280,12 @@ public class PlayerAnimationManager : MonoBehaviour
     {
         // need audio manager
         landingParticle.Play();
+    }
+
+    public void PlayBounce(Vector2 location, Quaternion normal)
+    {
+        bounceParticle.transform.SetPositionAndRotation(location, normal);
+        bounceParticle.Play();
     }
 
     public IEnumerator SwitchParticleWithTrail(float delay, MaskTrailItem item)
