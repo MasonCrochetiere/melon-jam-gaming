@@ -109,10 +109,10 @@ MonoBehaviour:
     Path: event:/SFX/Player/Dash
   <playerDeath>k__BackingField:
     Guid:
-      Data1: -1304729013
-      Data2: 1144566513
-      Data3: -863089507
-      Data4: 1738962045
+      Data1: 681677795
+      Data2: 1079058535
+      Data3: -1190950987
+      Data4: -347745128
     Path: event:/SFX/Player/PlayerDeath
   <playerHurt>k__BackingField:
     Guid:
@@ -120,7 +120,7 @@ MonoBehaviour:
       Data2: 1079058535
       Data3: -1190950987
       Data4: -347745128
-    Path: event:/SFX/Player/PlayerHurt
+    Path: event:/SFX/Player/PlayerDeath
   <timeAlert>k__BackingField:
     Guid:
       Data1: -760927113
