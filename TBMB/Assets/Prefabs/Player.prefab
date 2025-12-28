@@ -178,6 +178,7 @@ MonoBehaviour:
   - {fileID: 2610241408686101425}
   - {fileID: 7902371615245044091}
   - {fileID: 5832832234743188724}
+  trailSwitchDelay: 0.25
 --- !u!1 &1984532445838727688
 GameObject:
   m_ObjectHideFlags: 0

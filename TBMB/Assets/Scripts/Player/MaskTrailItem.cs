@@ -5,6 +5,7 @@ public class MaskTrailItem : MonoBehaviour
 {
     public MaskType type;
     public SpriteRenderer sprite { get; private set; }
+    public Rigidbody2D rb;
 
     [SerializeField] List<Sprite> maskSprites;
 
@@ -12,6 +13,7 @@ public class MaskTrailItem : MonoBehaviour
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void SetType(MaskType type)

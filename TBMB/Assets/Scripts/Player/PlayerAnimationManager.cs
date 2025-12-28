@@ -22,6 +22,7 @@ public class PlayerAnimationManager : MonoBehaviour
 
     [SerializeField] List<MaskTrailItem> trailItems;
     int unlockIndex = 0;
+    [SerializeField] float trailSwitchDelay = 0.1f;
 
     MaskType currentType;
     Coroutine maskSwitchCoroutine;
@@ -99,7 +100,7 @@ public class PlayerAnimationManager : MonoBehaviour
                     break;
             }
             maskSwitchParticle.Play();
-        }
+        }  
 
         // Set the new mask by using the sprite library and resolver.
         switch (maskType)
@@ -132,6 +133,9 @@ public class PlayerAnimationManager : MonoBehaviour
             if (item.type == maskType && item.gameObject.activeSelf)
             {
                 item.SetType(currentType);
+                item.sprite.enabled = false;
+
+                StartCoroutine(SwitchParticleWithTrail(trailSwitchDelay, item));
                 break;
             }
         }
@@ -265,5 +269,29 @@ public class PlayerAnimationManager : MonoBehaviour
     public void PlayFootstep()
     {
         AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.footstep);
+    }
+
+    public IEnumerator SwitchParticleWithTrail(float delay, MaskTrailItem item)
+    {
+        Debug.Log("COROUTINE STARTED!");
+
+        yield return new WaitForSeconds(delay);
+
+        Debug.Log("COROUTINE COMPLETE!");
+
+        ParticleSystem.Particle[] particles = new ParticleSystem.Particle[1];
+
+        maskSwitchParticle.GetParticles(particles);
+
+        item.sprite.enabled = true;
+        item.transform.position = particles[0].position;
+        item.transform.rotation = Quaternion.Euler(0, 0, particles[0].rotation);
+        item.rb.linearVelocity = particles[0].velocity;
+
+        ParticleSystem.Particle p = particles[0];
+        p.remainingLifetime = 0;
+        particles[0] = p;
+
+        maskSwitchParticle.SetParticles(particles);
     }
 }
