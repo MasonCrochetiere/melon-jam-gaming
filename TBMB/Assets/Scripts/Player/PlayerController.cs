@@ -48,6 +48,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float minimumBallDuration = 0.6f;
     [SerializeField] float rotationSpeed = 0.1f;
 
+    [Header("Death Variables")]
+    [SerializeField] float respawnDelay = 0.8f;
+
     [Header("Game Variables [DO NOT CHANGE]")]
     DashPoint dashPoint;
     bool dashAvailable;
@@ -63,12 +66,16 @@ public class PlayerController : MonoBehaviour
     private Coroutine playerForcesCoroutine;
     private Coroutine gravityCoroutine;
 
+    private Vector2 respawnPoint;
+
     // Start is called before the first frame update
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
 
         inventory = GetComponent<InventoryManager>();
+
+        respawnPoint = gameObject.transform.position;
     }
 
     public void initializeInput(InputSystem_Actions.PlayerActions actions)
@@ -84,6 +91,8 @@ public class PlayerController : MonoBehaviour
 
         actions.Ball.started += ctx => StartBall();
         actions.Ball.canceled += ctx => EndBall();
+
+        actions.Reset.started += ctx => RespawnPlayer();
     }
 
     private void FixedUpdate()
@@ -408,5 +417,39 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimationManager.PlayBounce(collision.contacts[0].point, Quaternion.Euler(collision.contacts[0].normal));
         }
+    }
+
+    void RespawnPlayer()
+    {
+        transform.position = respawnPoint;
+        rb.linearVelocity = Vector3.zero;
+
+        EndBall();
+        playerAnimationManager.PlayRespawn();
+    }
+
+    public void SetRespawnPoint(Vector2 point)
+    {
+        respawnPoint = point;
+    }
+
+    public void KillPlayer()
+    {
+        rb.linearVelocity = Vector3.zero;
+
+        RunCoroutine(MoveCoroutineType.SpeedClamp, respawnDelay);
+        RunCoroutine(MoveCoroutineType.Gravity, respawnDelay);
+        RunCoroutine(MoveCoroutineType.PlayerForces, respawnDelay);
+
+        StartCoroutine(Respawn(respawnDelay));
+
+        playerAnimationManager.PlayKill();
+    }
+
+    IEnumerator Respawn(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        RespawnPlayer();
     }
 }

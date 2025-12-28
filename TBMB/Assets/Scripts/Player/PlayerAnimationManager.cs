@@ -34,6 +34,7 @@ public class PlayerAnimationManager : MonoBehaviour
     Animator animator;
     SpriteLibrary spriteLibrary;
     SpriteResolver resolver;
+    SpriteRenderer spriteRenderer;
 
     bool overrideIdle = false;
     bool onGround = true;
@@ -43,12 +44,16 @@ public class PlayerAnimationManager : MonoBehaviour
     bool dashOverride = false;
     bool ballOverride = false;
 
+    float lastRotation = 0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
         spriteLibrary = GetComponent<SpriteLibrary>();
         resolver = GetComponent<SpriteResolver>();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
         particleRenderer = maskSwitchParticle.GetComponent<ParticleSystemRenderer>();
 
@@ -68,12 +73,14 @@ public class PlayerAnimationManager : MonoBehaviour
         {
             if (moveValueX < 0)
             {
-                gameObject.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+                lastRotation = 180f;
             }
             else if (moveValueX > 0)
             {
-                gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                lastRotation = 0f;
             }
+
+            gameObject.transform.rotation = Quaternion.Euler(0f, lastRotation, 0f);
         }
     }
 
@@ -272,20 +279,38 @@ public class PlayerAnimationManager : MonoBehaviour
 
     public void PlayFootstep()
     {
+        if (!spriteRenderer.enabled)
+            return;
+
         AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.footstep);
         footstepParticle.Play();
     }
 
     public void PlayLanding()
     {
+        if (!spriteRenderer.enabled)
+            return;
+
         // need audio manager
         landingParticle.Play();
     }
 
     public void PlayBounce(Vector2 location, Quaternion normal)
     {
+        if (!spriteRenderer.enabled)
+            return;
+
         bounceParticle.transform.SetPositionAndRotation(location, normal);
         bounceParticle.Play();
+    }
+    public void PlayKill()
+    {
+        spriteRenderer.enabled = false;
+    }
+
+    public void PlayRespawn()
+    {
+        spriteRenderer.enabled = true;
     }
 
     public IEnumerator SwitchParticleWithTrail(float delay, MaskTrailItem item)
