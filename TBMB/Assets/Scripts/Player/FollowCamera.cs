@@ -17,4 +17,9 @@ public class FollowCamera : MonoBehaviour
 
         cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, zoomEasingRatio);
     }
+
+    public void SetZoom(float value)
+    {
+        targetZoom = value;
+    }
 }

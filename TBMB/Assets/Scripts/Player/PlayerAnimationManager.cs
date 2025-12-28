@@ -8,7 +8,7 @@ public enum MaskType { Bag, Jump, Dash, Ball, None }
 public class PlayerAnimationManager : MonoBehaviour
 {
     [SerializeField] float DashAnimationDuration = 0.25f;
-    [SerializeField] float delayBeforeBag = 4f;
+    [SerializeField] const float delayBeforeBag = 4f;
 
     [SerializeField] SpriteLibraryAsset bagLibrary;
     [SerializeField] SpriteLibraryAsset jumpLibrary;
@@ -44,7 +44,9 @@ public class PlayerAnimationManager : MonoBehaviour
     bool dashOverride = false;
     bool ballOverride = false;
 
-    float lastRotation = 0f;
+    public float lastRotation = 0f;
+
+    bool auraUnlocked = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -89,29 +91,33 @@ public class PlayerAnimationManager : MonoBehaviour
         if (currentType == MaskType.None)
             return;
 
-        // Play the particle of the old mask flying off
-        if (currentType != maskType)
-        {            
-            switch (currentType)
+
+        if (spriteRenderer.enabled)
+        {
+            // Play the particle of the old mask flying off
+            if (currentType != maskType)
             {
-                case MaskType.Bag:
-                    particleRenderer.material = particleMaterials[0];
-                    break;
-                case MaskType.Jump:
-                    particleRenderer.material = particleMaterials[1];
-                    break;
-                case MaskType.Dash:
-                    particleRenderer.material = particleMaterials[2];
-                    break;
-                case MaskType.Ball:
-                    particleRenderer.material = particleMaterials[3];
-                    break;
-                case MaskType.None:
-                    particleRenderer.material = particleMaterials[4];
-                    break;
+                switch (currentType)
+                {
+                    case MaskType.Bag:
+                        particleRenderer.material = particleMaterials[0];
+                        break;
+                    case MaskType.Jump:
+                        particleRenderer.material = particleMaterials[1];
+                        break;
+                    case MaskType.Dash:
+                        particleRenderer.material = particleMaterials[2];
+                        break;
+                    case MaskType.Ball:
+                        particleRenderer.material = particleMaterials[3];
+                        break;
+                    case MaskType.None:
+                        particleRenderer.material = particleMaterials[4];
+                        break;
+                }
+                maskSwitchParticle.Play();
             }
-            maskSwitchParticle.Play();
-        }  
+        }
 
         // Set the new mask by using the sprite library and resolver.
         switch (maskType)
@@ -159,15 +165,18 @@ public class PlayerAnimationManager : MonoBehaviour
         trailItems[unlockIndex].gameObject.SetActive(true);
 
         unlockIndex++;
+
+        if (item == ItemList.Aura)
+            auraUnlocked = true;
     }
 
-    public void StartBagSwitchDelay()
+    public void StartBagSwitchDelay(float delay = delayBeforeBag)
     {
         if (maskSwitchCoroutine != null)
         {
             StopCoroutine(maskSwitchCoroutine);
         }
-        maskSwitchCoroutine = StartCoroutine(ResetToBagRoutine(delayBeforeBag));
+        maskSwitchCoroutine = StartCoroutine(ResetToBagRoutine(delay));
     }
 
     void StopBagSwitch()
@@ -274,7 +283,10 @@ public class PlayerAnimationManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
-        SetMaskType(MaskType.Bag);
+        if (auraUnlocked)
+            SetMaskType(MaskType.None);
+        else
+            SetMaskType(MaskType.Bag);
     }
 
     public void PlayFootstep()

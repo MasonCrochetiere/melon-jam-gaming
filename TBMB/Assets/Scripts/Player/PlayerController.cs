@@ -70,6 +70,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 respawnPoint;
 
+    bool playerEnabled = true;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -99,6 +101,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!playerEnabled)
+            return;
+
         GroundCheck();
 
         if (moveActivated)
@@ -422,7 +427,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void RespawnPlayer()
+    public void RespawnPlayer()
     {
         transform.position = respawnPoint;
         rb.linearVelocity = Vector3.zero;
@@ -466,6 +471,27 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
 
+        playerAnimationManager.lastRotation = 180f;
         RespawnPlayer();
+    }
+
+    public void CutsceneKill()
+    {
+        rb.linearVelocity = Vector3.zero;
+        transform.position = respawnPoint;
+
+        RunCoroutine(MoveCoroutineType.SpeedClamp, 4);
+        RunCoroutine(MoveCoroutineType.Gravity, 4);
+        RunCoroutine(MoveCoroutineType.PlayerForces, 4);
+
+        playerAnimationManager.lastRotation = 180f;
+        playerAnimationManager.PlayKill();
+        playerAnimationManager.StartBagSwitchDelay(2);
+    }
+
+    public void CutsceneSetRotation()
+    {
+        playerAnimationManager.setMoveValueX(-1);
+        playerAnimationManager.lastRotation = 180f;
     }
 }
