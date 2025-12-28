@@ -6,6 +6,11 @@ public class DashPoint : MonoBehaviour
     [SerializeField] GameObject dashAngleViewer;
     [SerializeField] Animator dashAngleAnimator;
 
+    [SerializeField] SpriteRenderer spriteToSwitch;
+    [SerializeField] Sprite newSprite;
+
+    [SerializeField] ParticleSystem particle;
+
     bool angleLocked = false;
     private void Start()
     {
@@ -48,6 +53,9 @@ public class DashPoint : MonoBehaviour
     public void LockAngle()
     {
         angleLocked = true;
+
+        spriteToSwitch.sprite = newSprite;
+        particle.Play();
     }
 
     public void UpdateDashAngle(float angle)

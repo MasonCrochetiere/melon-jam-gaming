@@ -32,6 +32,7 @@ Transform:
   m_Children:
   - {fileID: 1682222636281056944}
   - {fileID: 9217644031779610473}
+  - {fileID: 1359826109541860569}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6576160513232034868
@@ -350,3 +351,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 4206594670104123146}
   dashAngleAnimator: {fileID: 1287562850335082703}
+  spriteToSwitch: {fileID: 6576160513232034868}
+  newSprite: {fileID: 341352533, guid: 637a78970254d8344923a8fdfce45210, type: 3}
+  particle: {fileID: 4549178469296744579}
+--- !u!1001 &5551083353773068784
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4003548722707376570}
+    m_Modifications:
+    - target: {fileID: 6748790360033963290, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_Name
+      value: CameraSpark
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225971302976190835, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+--- !u!4 &1359826109541860569 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6905841504312431913, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+  m_PrefabInstance: {fileID: 5551083353773068784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4549178469296744579 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8225971302976190835, guid: 019ad8e1373910d48b1af6ce76b9849c, type: 3}
+  m_PrefabInstance: {fileID: 5551083353773068784}
+  m_PrefabAsset: {fileID: 0}
