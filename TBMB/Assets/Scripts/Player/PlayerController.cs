@@ -251,7 +251,7 @@ public class PlayerController : MonoBehaviour
     public float dashAngle = 0f;
     void Dash()
     {
-        if (!dashAvailable)
+        if (!dashAvailable || rb.sharedMaterial == ballPhysicsMaterial)
             return;
 
         if (dashPoint != null)
