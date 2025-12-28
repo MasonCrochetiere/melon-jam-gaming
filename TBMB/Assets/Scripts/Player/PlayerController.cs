@@ -7,6 +7,8 @@ using UnityEngine.UIElements;
 public enum MoveCoroutineType { PlayerForces, SpeedClamp, Gravity }
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] bool forceAllUnlocks = false;
+
     Rigidbody2D rb;
     InventoryManager inventory;
     [SerializeField] PlayerAnimationManager playerAnimationManager;
@@ -75,6 +77,10 @@ public class PlayerController : MonoBehaviour
     private Vector2 respawnPoint;
 
     bool playerEnabled = true;
+
+    bool jumpUnlocked;
+    bool ballUnlocked;
+    bool dashUnlocked;
 
     // Start is called before the first frame update
     void Awake()
@@ -176,7 +182,7 @@ public class PlayerController : MonoBehaviour
     {
         if ((jumpDownInput || Time.time - jumpPressedTime < jumpBufferDuration)
             && (onGround || coyoteActive)  
-            && inventory.CheckItem(ItemList.Jump))
+            && (jumpUnlocked || forceAllUnlocks))
         {
             rb.linearVelocityY = jumpVelocity;
 
@@ -276,6 +282,9 @@ public class PlayerController : MonoBehaviour
         if (!dashAvailable || rb.sharedMaterial == ballPhysicsMaterial)
             return;
 
+        if (!(dashUnlocked || forceAllUnlocks))
+            return;
+
         if (dashPoint != null)
         {
             dashPoint.LockAngle();
@@ -304,6 +313,9 @@ public class PlayerController : MonoBehaviour
 
     void StartBall()
     {
+        if (!(ballUnlocked || forceAllUnlocks))
+            return;
+
         rb.sharedMaterial = ballPhysicsMaterial;
         moveActivated = false;
 
@@ -501,10 +513,21 @@ public class PlayerController : MonoBehaviour
 
     public void ItemGet(ItemList item)
     {
-        if (item == ItemList.Aura)
+        switch (item)
         {
-            maxSpeed = auraMaxSpeed;
-            moveAcceleration = auraAcceleration;
+            case ItemList.Jump:
+                jumpUnlocked = true;
+                break;
+            case ItemList.Dash:
+                dashUnlocked = true;
+                break;
+            case ItemList.Ball:
+                ballUnlocked = true;
+                break;
+            case ItemList.Aura:
+                maxSpeed = auraMaxSpeed;
+                moveAcceleration = auraAcceleration;
+                break;
         }
     }
 }
