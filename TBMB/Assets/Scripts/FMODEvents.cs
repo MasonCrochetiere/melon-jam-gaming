@@ -5,6 +5,7 @@ using FMOD.Studio;
 public class FMODEvents : MonoBehaviour
 {
     [field: Header("Music")]
+    [field: SerializeField] public EventReference levelMusic { get; private set; }
     [field: SerializeField] public EventReference levelIntro { get; private set; }
     [field: SerializeField] public EventReference levelOutro { get; private set; }
     [field: SerializeField] public EventReference menuMusic { get; private set; }

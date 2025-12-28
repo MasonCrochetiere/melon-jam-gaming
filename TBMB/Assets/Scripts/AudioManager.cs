@@ -70,6 +70,11 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(sound);
     }
 
+    public void UpdateMusicParameter(MusicEnum musicPhase)
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("LevelPhase", ((float)musicPhase));
+    }
+
     public void SetAmbienceParameter(string parameterName, float parameterValue)
     {
         ambienceEventInstance.setParameterByName(parameterName, parameterValue);

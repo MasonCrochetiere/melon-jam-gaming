@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8c5130d8d2755574db14b1d79ba8c063
   - enabled: 1
-    path: Assets/Scenes/MasonScene.unity
-    guid: 8e478aabf0dba874ca8632cd41ada952
+    path: Assets/Scenes/ThomasScene.unity
+    guid: 6436d83d1d31fd4428cd93ebc2007f00
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

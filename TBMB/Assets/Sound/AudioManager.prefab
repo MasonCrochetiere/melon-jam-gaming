@@ -44,6 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1c76ed84d79dc4f9ee4d0349f95153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FMODEvents
+  <levelMusic>k__BackingField:
+    Guid:
+      Data1: -862723494
+      Data2: 1263958890
+      Data3: 399446439
+      Data4: -144630382
+    Path: event:/Music/LevelMusic
   <levelIntro>k__BackingField:
     Guid:
       Data1: -1639344837
@@ -187,3 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba264912d7772fe4ba6210f3ad7f0f7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  masterVolume: 1
+  musicVolume: 1
+  SFXVolume: 1
+  dialogueVolume: 1
