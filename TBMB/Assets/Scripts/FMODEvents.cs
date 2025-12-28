@@ -5,8 +5,12 @@ using FMOD.Studio;
 public class FMODEvents : MonoBehaviour
 {
     [field: Header("Music")]
-    [field: SerializeField] public EventReference levelMusic { get; private set; }
+    [field: SerializeField] public EventReference levelIntro { get; private set; }
+    [field: SerializeField] public EventReference levelOutro { get; private set; }
     [field: SerializeField] public EventReference menuMusic { get; private set; }
+
+    [field: Header("Ambience")]
+    [field: SerializeField] public EventReference ambience { get; private set; }
 
     [field: Header("Player")]
     [field: SerializeField] public EventReference footstep { get; private set; }
@@ -25,8 +29,6 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference buttonHover { get; private set; }
 
     [field: Header("Dialogue")]
-
-
 
     public static FMODEvents instance { get; private set; }
 

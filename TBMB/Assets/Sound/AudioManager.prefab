@@ -44,20 +44,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1c76ed84d79dc4f9ee4d0349f95153, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FMODEvents
-  <levelMusic>k__BackingField:
+  <levelIntro>k__BackingField:
     Guid:
-      Data1: 982718007
-      Data2: 1169065522
-      Data3: 1332376996
-      Data4: -149952178
-    Path: event:/Music/LevelMusic
+      Data1: -1639344837
+      Data2: 1144529790
+      Data3: -24134998
+      Data4: 2028540219
+    Path: event:/Music/LevelIntro
+  <levelOutro>k__BackingField:
+    Guid:
+      Data1: 1955933106
+      Data2: 1286786267
+      Data3: -1222696831
+      Data4: -1345952198
+    Path: event:/Music/LevelOutro
   <menuMusic>k__BackingField:
     Guid:
-      Data1: 1166748047
-      Data2: 1180793168
-      Data3: 2005066118
-      Data4: -34092643
+      Data1: 833144412
+      Data2: 1208047107
+      Data3: -2105073785
+      Data4: 61193855
     Path: event:/Music/MenuMusic
+  <ambience>k__BackingField:
+    Guid:
+      Data1: -557808665
+      Data2: 1263690072
+      Data3: -409406785
+      Data4: 1028714142
+    Path: event:/Ambience/Ambience
   <footstep>k__BackingField:
     Guid:
       Data1: 2073533264

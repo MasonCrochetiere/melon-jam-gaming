@@ -625,6 +625,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Ambience
   - Dialogue
   - Music
   - SFX

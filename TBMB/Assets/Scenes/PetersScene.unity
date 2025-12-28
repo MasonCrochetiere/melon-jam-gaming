@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &60159356
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -548,6 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &184115028
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -965,6 +967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &288022680
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1073,6 +1076,7 @@ GameObject:
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
+  - component: {fileID: 330585549}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1216,6 +1220,20 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: -10}
   targetZoom: 7
   zoomEasingRatio: 0.02
+--- !u!114 &330585549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &396027652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,6 +1429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &417654710
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2342,6 +2361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &549861806
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3386,6 +3406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &808506777
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3866,69 +3887,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseScreenUI
   pauseMenuUI: {fileID: 84797042}
   InputActions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
---- !u!1 &948176966
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 948176968}
-  - component: {fileID: 948176967}
-  m_Layer: 0
-  m_Name: Music
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &948176967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948176966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 982718007
-      Data2: 1169065522
-      Data3: 1332376996
-      Data4: -149952178
-    Path: event:/Music/LevelMusic
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!4 &948176968
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 948176966}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &986502531
 GameObject:
   m_ObjectHideFlags: 0
@@ -4020,6 +3978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &999581929
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4776,6 +4735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &1361701652
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5010,6 +4970,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &1398235724
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5347,6 +5308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &1536342116
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5627,6 +5589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &1576494314
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5769,6 +5732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &1590883511
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6278,6 +6242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &1645043590
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7017,6 +6982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DashPoint
   dashAngleViewer: {fileID: 0}
+  dashAngleAnimator: {fileID: 0}
 --- !u!58 &2001644992
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -7433,7 +7399,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 330585546}
-  - {fileID: 948176968}
   - {fileID: 1442376829}
   - {fileID: 764941124}
   - {fileID: 832575519}

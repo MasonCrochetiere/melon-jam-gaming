@@ -5,10 +5,35 @@ using System.Collections.Generic;
 
 public class AudioManager : MonoBehaviour
 {
+    [Header("Volume")]
+    [Range(0, 1)]
+
+    public float masterVolume = 1;
+    [Range(0, 1)]
+
+    public float musicVolume = 1;
+    [Range(0, 1)]
+
+    public float SFXVolume = 1;
+    [Range(0, 1)]
+
+    public float dialogueVolume = 1;
+    [Range(0, 1)]
+
+    private Bus masterBus;
+
+    private Bus musicBus;
+
+    private Bus SFXBus;
+
+    private Bus dialogueBus;
+
     public static AudioManager instance { get; private set; }
 
     private List<EventInstance> eventInstances;
     private List<StudioEventEmitter> eventEmitters;
+
+    private EventInstance ambienceEventInstance;
 
     private void Awake()
     {
@@ -20,11 +45,40 @@ public class AudioManager : MonoBehaviour
 
         eventInstances = new List<EventInstance>();
         eventEmitters = new List<StudioEventEmitter>();
+
+        masterBus = RuntimeManager.GetBus("bus:/");
+        musicBus = RuntimeManager.GetBus("bus:/Music");
+        SFXBus = RuntimeManager.GetBus("bus:/SFX");
+        dialogueBus = RuntimeManager.GetBus("bus:/Dialogue");
+    }
+
+    private void Start()
+    {
+        InitializeAmbience(FMODEvents.instance.ambience);
+    }
+
+    private void Update()
+    {
+        masterBus.setVolume(masterVolume);
+        musicBus.setVolume(musicVolume);
+        SFXBus.setVolume(SFXVolume);
+        dialogueBus.setVolume(dialogueVolume);
     }
 
     public void PlayeOneShot2D(EventReference sound)
     {
         RuntimeManager.PlayOneShot(sound);
+    }
+
+    public void SetAmbienceParameter(string parameterName, float parameterValue)
+    {
+        ambienceEventInstance.setParameterByName(parameterName, parameterValue);
+    }
+
+    private void InitializeAmbience(EventReference ambienceEventReference)
+    {
+        ambienceEventInstance = CreateInstance(ambienceEventReference);
+        ambienceEventInstance.start();
     }
 
     public EventInstance CreateInstance(EventReference eventReference)
@@ -33,6 +87,7 @@ public class AudioManager : MonoBehaviour
         eventInstances.Add(eventInstance);
         return eventInstance;
     }
+
     public StudioEventEmitter InitializeEventEmitter(EventReference eventReference, GameObject emitterGameObject)
     {
         StudioEventEmitter emitter = emitterGameObject.GetComponent<StudioEventEmitter>();
