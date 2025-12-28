@@ -256,6 +256,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Paintings_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd46baef7db514e459ec5bafc4728cbb
+      internalID: -1145545503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paintings_8
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 458bc07a929c5bb4abe6a1ce5bb57562
+      internalID: 1305301026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paintings_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 2
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fbe83f0a221994ca8ff2922a4e456f
+      internalID: 1508284102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Paintings_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a517911436eccc4590e79ab6aaeea90
+      internalID: -1398383306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -274,11 +362,15 @@ TextureImporter:
     nameFileIdTable:
       Paintings_0: -7058793229908712487
       Paintings_1: 973314779911330088
+      Paintings_10: -1398383306
       Paintings_2: 933099264
       Paintings_3: -753326877
       Paintings_4: 343962755
       Paintings_5: 1556317095
       Paintings_6: -1099441848
+      Paintings_7: -1145545503
+      Paintings_8: 1305301026
+      Paintings_9: 1508284102
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
