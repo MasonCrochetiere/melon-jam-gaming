@@ -123,7 +123,7 @@ public class NarrativeManager : MonoBehaviour
         linesInSection = _linesInSection;
         currentLine = 0;
 
-        if (Time.time - lastSectionStartTime <= sectionFastTimes[section]) // TIME CHECK
+        if (Time.time - lastSectionStartTime <= sectionFastTimes[section] && section != 0) // TIME CHECK
         {
             // PLAY FAST LINE
             PlayVoiceLine(VoiceLineType.Fast, currentSection, 0);
