@@ -16036,6 +16036,10 @@ PrefabInstance:
       propertyPath: jumpVelocity
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 1638838041549968986, guid: 0d9dbe5530d077942935e2332f947c56, type: 3}
+      propertyPath: forceAllUnlocks
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5739719714172424194, guid: 0d9dbe5530d077942935e2332f947c56, type: 3}
       propertyPath: m_Name
       value: Player

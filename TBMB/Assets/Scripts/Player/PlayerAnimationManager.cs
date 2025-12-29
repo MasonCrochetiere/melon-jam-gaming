@@ -325,6 +325,10 @@ public class PlayerAnimationManager : MonoBehaviour
         spriteRenderer.enabled = true;
     }
 
+    public bool getSpriteRendererEnabled()
+    {
+        return spriteRenderer.enabled;
+    }
     public IEnumerator SwitchParticleWithTrail(float delay, MaskTrailItem item)
     {
         Debug.Log("COROUTINE STARTED!");

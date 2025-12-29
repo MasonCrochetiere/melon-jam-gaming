@@ -76,8 +76,6 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 respawnPoint;
 
-    bool playerEnabled = true;
-
     bool jumpUnlocked;
     bool ballUnlocked;
     bool dashUnlocked;
@@ -111,9 +109,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!playerEnabled)
-            return;
-
         GroundCheck();
 
         if (moveActivated)
@@ -285,6 +280,9 @@ public class PlayerController : MonoBehaviour
         if (!(dashUnlocked || forceAllUnlocks))
             return;
 
+        if (!playerAnimationManager.getSpriteRendererEnabled())
+            return;
+
         if (dashPoint != null)
         {
             dashPoint.LockAngle();
@@ -316,6 +314,9 @@ public class PlayerController : MonoBehaviour
         if (!(ballUnlocked || forceAllUnlocks))
             return;
 
+        if (!playerAnimationManager.getSpriteRendererEnabled())
+            return;
+
         rb.sharedMaterial = ballPhysicsMaterial;
         moveActivated = false;
 
@@ -324,6 +325,9 @@ public class PlayerController : MonoBehaviour
 
     void EndBall()
     {
+        if (!playerAnimationManager.getSpriteRendererEnabled())
+            return;
+
         rb.sharedMaterial = basePhysicsMaterial;
         moveActivated = true;
 
