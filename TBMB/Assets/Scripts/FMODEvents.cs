@@ -26,6 +26,7 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Level")]
     [field: SerializeField] public EventReference glassShatter { get; private set; }
     [field: SerializeField] public EventReference glassShatterCutscene { get; private set; }
+    [field: SerializeField] public EventReference cameraBreak { get; private set; }
 
     [field: Header("UI")]
     [field: SerializeField] public EventReference buttonClick { get; private set; }
