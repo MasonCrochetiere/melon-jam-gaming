@@ -444,6 +444,7 @@ public class PlayerController : MonoBehaviour
         if (rb.sharedMaterial == ballPhysicsMaterial)
         {
             playerAnimationManager.PlayBounce(collision.contacts[0].point, Quaternion.Euler(collision.contacts[0].normal));
+            AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.playerBounce);
         }
     }
 
@@ -454,6 +455,7 @@ public class PlayerController : MonoBehaviour
 
         EndBall();
         playerAnimationManager.PlayRespawn();
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.playerRespawn);
     }
 
     public void SetRespawnPoint(Vector2 point)
