@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -6,6 +7,8 @@ public class SubtitleText : MonoBehaviour
     [SerializeField] float clearSubtitleTime = 8f;
 
     TMP_Text text;
+
+    Coroutine subtitleCoroutine;
 
     private void Awake()
     {
@@ -17,11 +20,17 @@ public class SubtitleText : MonoBehaviour
         text.text = dialogue;
         text.color = color;
 
-        Invoke("ClearSubtitle", clearSubtitleTime);
+        if (subtitleCoroutine != null)
+        {
+            StopCoroutine(subtitleCoroutine);
+        }
+        subtitleCoroutine = StartCoroutine(ClearSubtitles(clearSubtitleTime));
     }
 
-    void ClearSubtitle()
+    IEnumerator ClearSubtitles(float delay)
     {
+        yield return new WaitForSeconds(delay);
+
         text.text = "";
     }
 }
