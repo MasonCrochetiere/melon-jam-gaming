@@ -60,111 +60,159 @@ MonoBehaviour:
     index: 0
     audioClip: {fileID: 8300000, guid: 9cca793be7059a34c970095d733218e4, type: 3}
     text: Intro
+    subtitle: ASH - "Looks like you made it. Remember, this has got to be an in and
+      out heist - make it quick." \n ISADORE - "But don't forget to enjoy the museum!
+      There's lots of fun masks on top of the one you want..." \n ASH - "Ready? ....
+      Go."
+    color: {r: 1, g: 1, b: 1, a: 1}
   - type: 0
     section: 0
     index: 0
     audioClip: {fileID: 8300000, guid: 58fc946afe0a36e4b8215185f07c476f, type: 3}
     text: JumpTutorial
+    subtitle: ISADORE - "The Green Man's Disguise! Press Space to jump with it. It
+      reminds me of plumbers..."
+    color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 2
     section: 1
     index: 0
     audioClip: {fileID: 8300000, guid: b852f9690b58cb64b94d8e2f08955ecc, type: 3}
     text: Area1Fast1
+    subtitle: ISADORE - "You're going quick!"
+    color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 1
     section: 1
     index: 0
     audioClip: {fileID: 8300000, guid: f4e9d100e0ae0864d8c4cd871754568d, type: 3}
     text: Area1Slow1
+    subtitle: ISADORE - "Isn't the museum super nice?" \n ASH - "I don't think she
+      has time to find out. Keep going!"
+    color: {r: 1, g: 1, b: 1, a: 1}
   - type: 1
     section: 1
     index: 1
     audioClip: {fileID: 8300000, guid: 40dfbe18a50ee1c4a9f57661f97700df, type: 3}
     text: Area1Slow2
+    subtitle: ASH - "Precision platforming is all in the spacing. Figure out how
+      far in the air you can jump and stop yourself if you're going too far."
+    color: {r: 1, g: 0.7339685, b: 0.61698115, a: 1}
   - type: 1
     section: 1
     index: 2
     audioClip: {fileID: 8300000, guid: 0c995458d996dda42a7fd87b3f41f788, type: 3}
     text: Area1Info1
+    subtitle: ISADORE - "Each of these sculptures is a priceless antique!" \n ASH
+      - "And you still only care about the masks, huh?"
+    color: {r: 1, g: 1, b: 1, a: 1}
   - type: 0
     section: 1
     index: 0
     audioClip: {fileID: 8300000, guid: 6cfcf2a0b0bf46d4591a0652b8b35298, type: 3}
     text: DashTutorial
+    subtitle: ASH - "A plague doctor's mask. Left Click to dash forward. If you're
+      near a Dash Point, you'll dash towards it."
+    color: {r: 1, g: 0.7339685, b: 0.61698115, a: 1}
   - type: 2
     section: 2
     index: 0
     audioClip: {fileID: 8300000, guid: e75f6b40858a178419512e1dc03b0b15, type: 3}
     text: Area2Fast1
+    subtitle: ASH - "Let him COOK!"
+    color: {r: 1, g: 0.7339685, b: 0.61698115, a: 1}
   - type: 1
     section: 2
     index: 0
     audioClip: {fileID: 8300000, guid: 8f7dfc9e2a581c941a647871a711af8e, type: 3}
     text: Area2Slow1
+    subtitle: ISADORE - "It looks like you'll need to be careful to get just the
+      right angle on those Dash Points to go where you want!"
+    color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 1
     section: 2
     index: 1
     audioClip: {fileID: 8300000, guid: f11e5b0ec3ae11d44a06f31c74542550, type: 3}
     text: Area2Slow2
+    subtitle: ASH - "Using a Dash Point refreshes your normal dash while in mid-air.
+      Try using both in sequence."
+    color: {r: 1, g: 0.7339685, b: 0.61698115, a: 1}
   - type: 0
     section: 2
     index: 0
     audioClip: {fileID: 8300000, guid: 6e463cc11a6201e47b283d98c3a7c81e, type: 3}
     text: BallTutorial
+    subtitle: ISADORE - "Nice VR Headset! Press Right Click to make yourself a bouncy
+      force-field and get lost in immersion!!"
+    color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 2
     section: 3
     index: 0
     audioClip: {fileID: 8300000, guid: 457aff4f001653a4883fe6f8522923fa, type: 3}
     text: Area3Fast1
+    subtitle: ASH - "They're LOCKED IN!"
+    color: {r: 1, g: 0.7339685, b: 0.61698115, a: 1}
   - type: 1
     section: 3
     index: 0
     audioClip: {fileID: 8300000, guid: cd9975cc4a33d7a48a481ae4381f8ff7, type: 3}
     text: Area3Slow1
+    subtitle: ISADORE - "A big bounce lets you turn speed in one direction to another!"
+      \n ASH - "Like falling. Gravity's going to make you go a lot faster than you
+      can run."
+    color: {r: 1, g: 1, b: 1, a: 1}
   - type: 1
     section: 3
     index: 1
     audioClip: {fileID: 8300000, guid: db1fee6a12a5cb5468d2646224fa0c44, type: 3}
     text: Area3Slow2
+    subtitle: ASH - "The ball keeps whatever speed you had going into it. Try using
+      it right at the end of a Dash..."
+    color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 2
     section: 4
     index: 0
     audioClip: {fileID: 8300000, guid: 4bf08a344df549743aa663096c5b1b58, type: 3}
     text: Area4Fast1
+    subtitle: ISADORE - "This is the last room!"
+    color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 1
     section: 4
     index: 0
     audioClip: {fileID: 8300000, guid: 7f06b9f8a0a49354bb14314cb74851b3, type: 3}
     text: Area4Slow1
+    subtitle: ISADORE - "I think you have to use all the masks to make this one work!"
+      \n ASH - "But there's no one way to make it through here."
+    color: {r: 1, g: 1, b: 1, a: 1}
   - type: 1
     section: 4
     index: 1
     audioClip: {fileID: 8300000, guid: 237e46a40f5734c49a77395129eaef2d, type: 3}
     text: Area4Slow2
+    subtitle: ASH - "Don't forget that you're going to have to come back the way
+      you came."
+    color: {r: 1, g: 0.7339685, b: 0.61698115, a: 1}
   - type: 1
     section: 4
     index: 2
     audioClip: {fileID: 8300000, guid: 48c7fbccdc58b774998c818aab79e511, type: 3}
     text: Area4Info1
+    subtitle: ISADORE - "That big dinosaur is my favorite part of the whole museum!
+      I have a bunch of its trading card!"
+    color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 2
     section: 5
     index: 0
     audioClip: {fileID: 8300000, guid: eb57a085902128b469a680aa36cfc0c0, type: 3}
     text: EnterGlassRoomFast
+    subtitle: ASH - "You made it. Now grab it and get out."
+    color: {r: 1, g: 0.7339685, b: 0.61698115, a: 1}
   - type: 1
     section: 5
     index: 0
     audioClip: {fileID: 8300000, guid: cfb90796ac9c6d5409fb9547d181d499, type: 3}
     text: EnterGlassRoomSlow
-  - type: 0
-    section: 3
-    index: 0
-    audioClip: {fileID: 8300000, guid: de0b9dc0804bbe2418e904edc48a2233, type: 3}
-    text: GetGlassFast
-  - type: 0
-    section: 10
-    index: 0
-    audioClip: {fileID: 8300000, guid: 5639025a98cb78e4792db4cbc8694483, type: 3}
-    text: GetGlassSlow - IDK HOW TO PUT THIS IN IN TIME
+    subtitle: ISADORE - "Nice work! Look over there - is that the mask you wanted?"
+    color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
+  subtitles: {fileID: 0}
 --- !u!82 &3421425008209047432
 AudioSource:
   m_ObjectHideFlags: 0

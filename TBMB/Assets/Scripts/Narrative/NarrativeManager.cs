@@ -12,7 +12,9 @@ public class VoiceLine
     [SerializeField] public int index;
 
     [SerializeField] public AudioClip audioClip;
-    [SerializeField] string text; 
+    [SerializeField] string text;
+    [SerializeField] public string subtitle;
+    [SerializeField] public Color color = Color.white;
 }
 
 public class NarrativeManager : MonoBehaviour
@@ -25,6 +27,8 @@ public class NarrativeManager : MonoBehaviour
     [SerializeField] AudioSource narrativeAudio;
 
     [SerializeField] List<VoiceLine> voiceLines;
+
+    [SerializeField] SubtitleText subtitles;
 
     int currentSection;
     int currentLine;
@@ -107,6 +111,8 @@ public class NarrativeManager : MonoBehaviour
             {
                 narrativeAudio.Stop();
                 narrativeAudio.PlayOneShot(line.audioClip);
+
+                subtitles.SetSubtitleText(line.subtitle, line.color);
 
                 Debug.LogWarning("WE FOUND LINE TO PLAY IT'S TYPE " + type.ToString() + " SECTION " + section.ToString() + " INDEX " + index.ToString());
 
