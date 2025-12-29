@@ -37,11 +37,15 @@ public class AudioManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
+        if (instance == null)
         {
-            Debug.LogError("Found more than one Audio Manager script in the scene.");
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        instance = this;
+        else
+        {
+            Destroy(gameObject);
+        }
 
         eventInstances = new List<EventInstance>();
         eventEmitters = new List<StudioEventEmitter>();
