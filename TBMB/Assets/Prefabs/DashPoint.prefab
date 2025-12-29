@@ -439,6 +439,7 @@ MonoBehaviour:
   spriteToSwitch: {fileID: 6576160513232034868}
   newSprite: {fileID: 341352533, guid: 637a78970254d8344923a8fdfce45210, type: 3}
   particle: {fileID: 4549178469296744579}
+  pointLight: {fileID: 5924909114298893767}
 --- !u!1001 &5551083353773068784
 PrefabInstance:
   m_ObjectHideFlags: 0
