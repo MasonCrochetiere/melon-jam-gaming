@@ -10,6 +10,9 @@ public class Laser : MonoBehaviour
 
     [Header("Visuals")]
     public SpriteRenderer laserSprite;
+    [SerializeField] ParticleSystem laserParticle;
+    [SerializeField] float laserParticleTime = .375f;
+    bool particlePlayed = false;
 
     [Header("Timing")]
     public float onDuration = 2f;
@@ -44,10 +47,18 @@ public class Laser : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
+        if (timer <= laserParticleTime && !particlePlayed)
+        {
+            laserParticle.Play();
+            particlePlayed = true;
+        }
+
         if (timer <= 0f)
         {
             isOn = !isOn;
             timer = isOn ? onDuration : offDuration;
+
+            particlePlayed = false;
         }
     }
 
