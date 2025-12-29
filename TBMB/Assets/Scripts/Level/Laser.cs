@@ -55,13 +55,14 @@ public class Laser : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.Raycast(origin, dir, maxDistance, hitLayers);
 
-        float laserLength;
+        float laserLength = maxDistance;
         if (hit.collider != null)
         {
-            laserLength = hit.distance;
+            //laserLength = hit.distance;
 
-            if (hit.distance <= maxDistance)
+            if (hit.distance <= (maxDistance * 0.0625))
             {
+                Debug.Log("DISTANCE IS " + hit.distance);
                 if (hit.collider.gameObject.CompareTag("Player"))
                 {
                     hit.collider.gameObject.GetComponent<PlayerController>().KillPlayer();
@@ -70,7 +71,7 @@ public class Laser : MonoBehaviour
         }
         else
         {
-            laserLength = maxDistance;
+            //laserLength = maxDistance;
         }
 
         laserSprite.enabled = true;
