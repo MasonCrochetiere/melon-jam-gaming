@@ -58,122 +58,112 @@ MonoBehaviour:
   - type: 1
     section: 0
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 9cca793be7059a34c970095d733218e4, type: 3}
     text: Intro
   - type: 0
     section: 0
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 58fc946afe0a36e4b8215185f07c476f, type: 3}
     text: JumpTutorial
   - type: 2
     section: 0
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: b852f9690b58cb64b94d8e2f08955ecc, type: 3}
     text: Area1Fast1
   - type: 1
     section: 1
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: f4e9d100e0ae0864d8c4cd871754568d, type: 3}
     text: Area1Slow1
   - type: 1
     section: 1
     index: 1
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 40dfbe18a50ee1c4a9f57661f97700df, type: 3}
     text: Area1Slow2
   - type: 1
     section: 1
     index: 2
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 0c995458d996dda42a7fd87b3f41f788, type: 3}
     text: Area1Info1
   - type: 0
     section: 1
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 6cfcf2a0b0bf46d4591a0652b8b35298, type: 3}
     text: DashTutorial
   - type: 2
     section: 2
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: e75f6b40858a178419512e1dc03b0b15, type: 3}
     text: Area2Fast1
   - type: 1
     section: 2
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 8f7dfc9e2a581c941a647871a711af8e, type: 3}
     text: Area2Slow1
   - type: 1
     section: 2
     index: 1
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: f11e5b0ec3ae11d44a06f31c74542550, type: 3}
     text: Area2Slow2
-  - type: 0
-    section: 9
-    index: 0
-    audioClip: {fileID: 0}
-    text: Area2Info1 HAS NO LINE ATM
   - type: 0
     section: 2
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 6e463cc11a6201e47b283d98c3a7c81e, type: 3}
     text: BallTutorial
   - type: 2
     section: 3
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 457aff4f001653a4883fe6f8522923fa, type: 3}
     text: Area3Fast1
   - type: 1
     section: 3
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: cd9975cc4a33d7a48a481ae4381f8ff7, type: 3}
     text: Area3Slow1
   - type: 1
     section: 3
     index: 1
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: db1fee6a12a5cb5468d2646224fa0c44, type: 3}
     text: Area3Slow2
-  - type: 1
-    section: 3
-    index: 2
-    audioClip: {fileID: 0}
-    text: Area3Info1 HAS NO LINE ATM
   - type: 2
     section: 4
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 4bf08a344df549743aa663096c5b1b58, type: 3}
     text: Area4Fast1
   - type: 1
     section: 4
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 7f06b9f8a0a49354bb14314cb74851b3, type: 3}
     text: Area4Slow1
   - type: 1
     section: 4
     index: 1
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 237e46a40f5734c49a77395129eaef2d, type: 3}
     text: Area4Slow2
   - type: 1
     section: 4
     index: 2
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 48c7fbccdc58b774998c818aab79e511, type: 3}
     text: Area4Info1
   - type: 2
     section: 5
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: eb57a085902128b469a680aa36cfc0c0, type: 3}
     text: EnterGlassRoomFast
   - type: 1
     section: 5
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: cfb90796ac9c6d5409fb9547d181d499, type: 3}
     text: EnterGlassRoomSlow
   - type: 0
     section: 3
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: de0b9dc0804bbe2418e904edc48a2233, type: 3}
     text: GetGlassFast
   - type: 0
     section: 10
     index: 0
-    audioClip: {fileID: 0}
+    audioClip: {fileID: 8300000, guid: 5639025a98cb78e4792db4cbc8694483, type: 3}
     text: GetGlassSlow - IDK HOW TO PUT THIS IN IN TIME
 --- !u!82 &3421425008209047432
 AudioSource:
