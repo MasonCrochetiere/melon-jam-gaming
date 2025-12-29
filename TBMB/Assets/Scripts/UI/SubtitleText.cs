@@ -13,6 +13,12 @@ public class SubtitleText : MonoBehaviour
     private void Awake()
     {
         text = GetComponent<TMP_Text>();
+
+        if (text == null )
+        {
+            Debug.LogError("SubtitleText no have TMP_text");
+            return; 
+        }
         text.text = "";
     }
     public void SetSubtitleText(string dialogue, Color color)
