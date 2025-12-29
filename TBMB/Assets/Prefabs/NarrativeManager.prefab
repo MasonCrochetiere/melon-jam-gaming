@@ -110,7 +110,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 6cfcf2a0b0bf46d4591a0652b8b35298, type: 3}
     text: DashTutorial
     subtitle: ASH - "A plague doctor's mask. Left Click to dash forward. If you're
-      near a Dash Point, you'll dash towards it."
+      near a Dash Point, you'll dash towards it at an angle."
     color: {r: 1, g: 0.7339685, b: 0.61698115, a: 1}
   - type: 2
     section: 2
@@ -125,7 +125,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 8f7dfc9e2a581c941a647871a711af8e, type: 3}
     text: Area2Slow1
     subtitle: ISADORE - "It looks like you'll need to be careful to get just the
-      right angle on those Dash Points to go where you want!"
+      right angle on those Dash Points to go wherever you want!"
     color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 1
     section: 2
@@ -164,8 +164,8 @@ MonoBehaviour:
     index: 1
     audioClip: {fileID: 8300000, guid: db1fee6a12a5cb5468d2646224fa0c44, type: 3}
     text: Area3Slow2
-    subtitle: ASH - "The ball keeps whatever speed you had going into it. Try using
-      it right at the end of a Dash..."
+    subtitle: ASH - "The VR ball keeps whatever speed you had when you started. Try
+      using it right at the end of a Dash..."
     color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 2
     section: 4
@@ -179,8 +179,8 @@ MonoBehaviour:
     index: 0
     audioClip: {fileID: 8300000, guid: 7f06b9f8a0a49354bb14314cb74851b3, type: 3}
     text: Area4Slow1
-    subtitle: ISADORE - "I think you have to use all the masks to make this one work!"
-      \n ASH - "But there's no one way to make it through here."
+    subtitle: ISADORE - "I think you might have to use all the masks to make this
+      one work!" \n ASH - "But there's no one way to make it through here."
     color: {r: 1, g: 1, b: 1, a: 1}
   - type: 1
     section: 4
@@ -196,7 +196,7 @@ MonoBehaviour:
     audioClip: {fileID: 8300000, guid: 48c7fbccdc58b774998c818aab79e511, type: 3}
     text: Area4Info1
     subtitle: ISADORE - "That big dinosaur is my favorite part of the whole museum!
-      I have a bunch of its trading card!"
+      I have a bunch of its trading cards!"
     color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   - type: 2
     section: 5
@@ -210,7 +210,8 @@ MonoBehaviour:
     index: 0
     audioClip: {fileID: 8300000, guid: cfb90796ac9c6d5409fb9547d181d499, type: 3}
     text: EnterGlassRoomSlow
-    subtitle: ISADORE - "Nice work! Look over there - is that the mask you wanted?"
+    subtitle: ISADORE - "Nice work! Wait, look over there - isn't that the mask you
+      wanted?"
     color: {r: 0.61698115, g: 1, b: 0.8910109, a: 1}
   subtitles: {fileID: 0}
 --- !u!82 &3421425008209047432
