@@ -18,6 +18,10 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference dash { get; private set; }
     [field: SerializeField] public EventReference playerDeath { get; private set; }
     [field: SerializeField] public EventReference playerLand { get; private set; }
+    [field: SerializeField] public EventReference playerBounce { get; private set; }
+    [field: SerializeField] public EventReference playerRespawn { get; private set; }
+
+
 
     [field: Header("Level")]
     [field: SerializeField] public EventReference glassShatter { get; private set; }

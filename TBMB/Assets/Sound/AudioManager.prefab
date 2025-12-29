@@ -107,6 +107,20 @@ MonoBehaviour:
       Data3: 2079909549
       Data4: -644414861
     Path: event:/SFX/Player/PlayerLand
+  <playerBounce>k__BackingField:
+    Guid:
+      Data1: -320186970
+      Data2: 1283477079
+      Data3: -78211449
+      Data4: -1436513179
+    Path: event:/SFX/Player/Bounce
+  <playerRespawn>k__BackingField:
+    Guid:
+      Data1: 2015323172
+      Data2: 1082291969
+      Data3: 1839893401
+      Data4: -791083648
+    Path: event:/SFX/Player/PlayerRespawn
   <glassShatter>k__BackingField:
     Guid:
       Data1: -2111672920

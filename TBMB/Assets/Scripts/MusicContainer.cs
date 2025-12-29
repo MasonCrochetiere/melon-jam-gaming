@@ -59,4 +59,10 @@ public class MusicContainer : MonoBehaviour
             isDimmed = false;
         }
     }
+
+    private void OnDestroy()
+    {
+        AudioManager.instance.UpdateMusicParameter(MusicEnum.LevelIntro);
+        music.stop(STOP_MODE.IMMEDIATE);
+    }
 }
