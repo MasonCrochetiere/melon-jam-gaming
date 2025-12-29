@@ -333,6 +333,8 @@ public class PlayerAnimationManager : MonoBehaviour
     {
         spriteRenderer.enabled = true;
         deathPlayed = false;
+
+        Debug.Log("ENABLE SPRITE");
     }
 
     public bool getSpriteRendererEnabled()

@@ -18,6 +18,9 @@ public class Laser : MonoBehaviour
     private bool isOn = true;
     private float timer;
 
+    [SerializeField] float timeBeforeKillAgain = 0.9f;
+    bool hasKilled;
+
     private void Start()
     {
         timer = onDuration;
@@ -63,9 +66,12 @@ public class Laser : MonoBehaviour
             if (hit.distance <= (maxDistance * 0.0625))
             {
                 Debug.Log("DISTANCE IS " + hit.distance);
-                if (hit.collider.gameObject.CompareTag("Player"))
+                if (hit.collider.gameObject.CompareTag("Player") && !hasKilled)
                 {
                     hit.collider.gameObject.GetComponent<PlayerController>().KillPlayer();
+                    hasKilled = true;
+
+                    Invoke("ResetKilled", timeBeforeKillAgain);
                 }
             }
         }
@@ -90,5 +96,10 @@ public class Laser : MonoBehaviour
     public void SetDirection(Vector2 newDirection)
     {
         direction = newDirection.normalized;
+    }
+
+    void ResetKilled()
+    {
+        hasKilled = false;
     }
 }

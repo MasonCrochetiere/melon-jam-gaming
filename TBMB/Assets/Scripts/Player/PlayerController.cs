@@ -82,6 +82,8 @@ public class PlayerController : MonoBehaviour
     bool ballUnlocked;
     bool dashUnlocked;
 
+    bool playerDead = false;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -465,7 +467,12 @@ public class PlayerController : MonoBehaviour
 
         playerAnimationManager.PlayRespawn();
         EndBall();
+        moveActivated = true;
         AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.playerRespawn);
+
+        playerDead = false;
+
+        Debug.Log("RESPAWN");
     }
 
     public void SetRespawnPoint(Vector2 point)
@@ -475,6 +482,13 @@ public class PlayerController : MonoBehaviour
 
     public void KillPlayer()
     {
+        if (playerDead)
+            return;
+
+        Debug.Log("KILL");
+
+        playerDead = true;
+
         rb.linearVelocity = Vector3.zero;
 
         RunCoroutine(MoveCoroutineType.SpeedClamp, respawnDelay);
