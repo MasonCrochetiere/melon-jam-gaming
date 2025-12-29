@@ -95,7 +95,8 @@ public class NarrativeManager : MonoBehaviour
 
     void AuraLine()
     {
-        PlayVoiceLine(VoiceLineType.Tutorial, 3, 0);
+        Debug.LogWarning("AURA LINE!");
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.glassGet);
     }
 
     public void PlayVoiceLine(VoiceLineType type, int section, int index)
