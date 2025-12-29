@@ -341,11 +341,8 @@ public class PlayerAnimationManager : MonoBehaviour
     }
     public IEnumerator SwitchParticleWithTrail(float delay, MaskTrailItem item)
     {
-        Debug.Log("COROUTINE STARTED!");
-
         yield return new WaitForSeconds(delay);
 
-        Debug.Log("COROUTINE COMPLETE!");
 
         ParticleSystem.Particle[] particles = new ParticleSystem.Particle[1];
 

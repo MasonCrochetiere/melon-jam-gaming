@@ -32,6 +32,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference buttonHover { get; private set; }
 
     [field: Header("Dialogue")]
+    [field: SerializeField] public EventReference glassGet { get; private set; }
 
     public static FMODEvents instance { get; private set; }
 
