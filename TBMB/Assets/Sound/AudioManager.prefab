@@ -135,6 +135,13 @@ MonoBehaviour:
       Data3: 2104307112
       Data4: -1347770585
     Path: event:/SFX/Level/GlassShatterCutscene
+  <cameraBreak>k__BackingField:
+    Guid:
+      Data1: -113571984
+      Data2: 1135021828
+      Data3: 531889321
+      Data4: -155004406
+    Path: event:/SFX/Level/CameraBreak
   <buttonClick>k__BackingField:
     Guid:
       Data1: 984766557
