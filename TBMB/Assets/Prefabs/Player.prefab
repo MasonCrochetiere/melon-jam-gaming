@@ -999,12 +999,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58c618a3397524c459b95ab9e24e7215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TarodevController.PlayerController
+  forceAllUnlocks: 0
   playerAnimationManager: {fileID: 3150608005670166938}
   rotationBase: {fileID: 1984532445838727688}
   jumpDownInput: 0
   moveAcceleration: 100
   maxSpeed: 10
-  jumpVelocity: 12
+  jumpVelocity: 14
   groundFriction: 8
   airFriction: 2
   airControlMultiplier: 0.6
