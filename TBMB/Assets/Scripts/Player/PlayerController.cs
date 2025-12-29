@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpBufferDuration = 0.2f;
     float jumpPressedTime;
 
+    [SerializeField] float maximumFallSpeed = 25f;
+
     [Header("Dash Variables")]
     [SerializeField] float dashForce = 30f;
     [Tooltip("Duration to disable gravity and max speed")]
@@ -226,6 +228,12 @@ public class PlayerController : MonoBehaviour
             // clamp to a max speed to keep the acceleration on the move without a big mess
             rb.linearVelocity = new Vector2(Mathf.Clamp(rb.linearVelocity.x, -speedClamp, speedClamp), rb.linearVelocityY);
         }
+
+        if (rb.linearVelocityY < 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocityX, Mathf.Clamp(rb.linearVelocityY, -1 * maximumFallSpeed, 0));
+        }
+        
 
         playerAnimationManager.setMoveValueX(moveInputValue.x);
     }
@@ -445,6 +453,8 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimationManager.PlayBounce(collision.contacts[0].point, Quaternion.Euler(collision.contacts[0].normal));
             AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.playerBounce);
+
+            dashAvailable = true;
         }
     }
 

@@ -1012,6 +1012,7 @@ MonoBehaviour:
   basePhysicsMaterial: {fileID: 6200000, guid: 2781397d60fbc5e4b899f5042006adf2, type: 2}
   coyoteTimeDuration: 0.2
   jumpBufferDuration: 0.2
+  maximumFallSpeed: 30
   dashForce: 30
   dashDuration: 0.2
   dashMoveDisableDuration: 0.1
