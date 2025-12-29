@@ -133,9 +133,37 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonHover
       objectReference: {fileID: 0}
+    - target: {fileID: 166407833834562254, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 166407833834562254, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 166407833834562254, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 226646520214256794, guid: 91000d3057e79114fa4e412203677169, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 247577596276081695, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 247577596276081695, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 247577596276081695, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 247577596276081695, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -111.1
       objectReference: {fileID: 0}
     - target: {fileID: 455131604594268709, guid: 91000d3057e79114fa4e412203677169, type: 3}
       propertyPath: m_AnchorMax.y
@@ -197,6 +225,22 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonHover
       objectReference: {fileID: 0}
+    - target: {fileID: 7916044111323959784, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916044111323959784, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916044111323959784, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7916044111323959784, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -34.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8689525829953293373, guid: 91000d3057e79114fa4e412203677169, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -204,6 +248,22 @@ PrefabInstance:
     - target: {fileID: 8689525829953293373, guid: 91000d3057e79114fa4e412203677169, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ButtonHover
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731598210497027023, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731598210497027023, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731598210497027023, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731598210497027023, guid: 91000d3057e79114fa4e412203677169, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 94.98
       objectReference: {fileID: 0}
     - target: {fileID: 8897966582013551407, guid: 91000d3057e79114fa4e412203677169, type: 3}
       propertyPath: m_AnchorMax.y
