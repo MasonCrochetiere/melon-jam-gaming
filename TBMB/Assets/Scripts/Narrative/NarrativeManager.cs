@@ -2,12 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum VoiceLineType { Tutorial, Dilldally, Fast }
+
+[System.Serializable]
+public class VoiceLine
+{
+    [SerializeField] public VoiceLineType type;
+    [SerializeField] public int section;
+    [SerializeField] public int index;
+
+    [SerializeField] public AudioClip audioClip;
+    [SerializeField] string text; 
+}
+
 public class NarrativeManager : MonoBehaviour
 {
     public static NarrativeManager instance;
 
     [SerializeField] float timeBetweenDillyDallyLines = 20f;
     [SerializeField] List<float> sectionFastTimes;
+
+    [SerializeField] AudioSource narrativeAudio;
+
+    [SerializeField] List<VoiceLine> voiceLines;
 
     int currentSection;
     int currentLine;
@@ -34,7 +51,7 @@ public class NarrativeManager : MonoBehaviour
     void DillyDallyLine()
     {
         Debug.Log("PLAYING DILLYDALLY LINE #" + currentLine + " IN SECTION #" + currentSection);
-        // Play the line of index currentLine in section currentSection
+        PlayVoiceLine(VoiceLineType.Dilldally, currentSection, currentLine);
         currentLine++;
 
         // should we have the lines loop? this functionality does not include that
@@ -62,18 +79,42 @@ public class NarrativeManager : MonoBehaviour
         switch (item)
         {
             case ItemList.Jump:
-
+                PlayVoiceLine(VoiceLineType.Tutorial, 0, 0);
                 break;
             case ItemList.Dash:
-
+                PlayVoiceLine(VoiceLineType.Tutorial, 1, 0);
                 break;
             case ItemList.Ball:
-
+                PlayVoiceLine(VoiceLineType.Tutorial, 2, 0);
                 break;
             case ItemList.Aura:
-                // @ Thomas -- Need cutscene integration here
+                Invoke("AuraLine", 7f);
                 break;
         }
+    }
+
+    void AuraLine()
+    {
+        PlayVoiceLine(VoiceLineType.Tutorial, 3, 0);
+    }
+
+    public void PlayVoiceLine(VoiceLineType type, int section, int index)
+    {
+        foreach (VoiceLine line in voiceLines)
+        {
+            if (line.type == type && line.section == section && line.index == index)
+            {
+                narrativeAudio.Stop();
+                narrativeAudio.PlayOneShot(line.audioClip);
+
+                Debug.LogWarning("WE FOUND LINE TO PLAY IT'S TYPE " + type.ToString() + " SECTION " + section.ToString() + " INDEX " + index.ToString());
+
+                return;
+            }
+        }
+
+        Debug.LogError("LINE NOT FOUND!");
+
     }
 
     public void NewSection(int section, int _linesInSection)
@@ -85,7 +126,7 @@ public class NarrativeManager : MonoBehaviour
         if (Time.time - lastSectionStartTime <= sectionFastTimes[section]) // TIME CHECK
         {
             // PLAY FAST LINE
-
+            PlayVoiceLine(VoiceLineType.Fast, currentSection, 0);
             Debug.Log("PLAYING FAST LINE FOR " + section);
 
             RunCoroutine();

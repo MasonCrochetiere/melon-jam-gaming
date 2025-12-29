@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8245964880249211228}
   - component: {fileID: 5552842738722170964}
+  - component: {fileID: 3421425008209047432}
   m_Layer: 0
   m_Name: NarrativeManager
   m_TagString: Untagged
@@ -51,3 +52,223 @@ MonoBehaviour:
   - 10
   - 10
   - 10
+  - 10
+  narrativeAudio: {fileID: 3421425008209047432}
+  voiceLines:
+  - type: 1
+    section: 0
+    index: 0
+    audioClip: {fileID: 0}
+    text: Intro
+  - type: 0
+    section: 0
+    index: 0
+    audioClip: {fileID: 0}
+    text: JumpTutorial
+  - type: 2
+    section: 0
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area1Fast1
+  - type: 1
+    section: 1
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area1Slow1
+  - type: 1
+    section: 1
+    index: 1
+    audioClip: {fileID: 0}
+    text: Area1Slow2
+  - type: 1
+    section: 1
+    index: 2
+    audioClip: {fileID: 0}
+    text: Area1Info1
+  - type: 0
+    section: 1
+    index: 0
+    audioClip: {fileID: 0}
+    text: DashTutorial
+  - type: 2
+    section: 2
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area2Fast1
+  - type: 1
+    section: 2
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area2Slow1
+  - type: 1
+    section: 2
+    index: 1
+    audioClip: {fileID: 0}
+    text: Area2Slow2
+  - type: 0
+    section: 9
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area2Info1 HAS NO LINE ATM
+  - type: 0
+    section: 2
+    index: 0
+    audioClip: {fileID: 0}
+    text: BallTutorial
+  - type: 2
+    section: 3
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area3Fast1
+  - type: 1
+    section: 3
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area3Slow1
+  - type: 1
+    section: 3
+    index: 1
+    audioClip: {fileID: 0}
+    text: Area3Slow2
+  - type: 1
+    section: 3
+    index: 2
+    audioClip: {fileID: 0}
+    text: Area3Info1 HAS NO LINE ATM
+  - type: 2
+    section: 4
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area4Fast1
+  - type: 1
+    section: 4
+    index: 0
+    audioClip: {fileID: 0}
+    text: Area4Slow1
+  - type: 1
+    section: 4
+    index: 1
+    audioClip: {fileID: 0}
+    text: Area4Slow2
+  - type: 1
+    section: 4
+    index: 2
+    audioClip: {fileID: 0}
+    text: Area4Info1
+  - type: 2
+    section: 5
+    index: 0
+    audioClip: {fileID: 0}
+    text: EnterGlassRoomFast
+  - type: 1
+    section: 5
+    index: 0
+    audioClip: {fileID: 0}
+    text: EnterGlassRoomSlow
+  - type: 0
+    section: 3
+    index: 0
+    audioClip: {fileID: 0}
+    text: GetGlassFast
+  - type: 0
+    section: 10
+    index: 0
+    audioClip: {fileID: 0}
+    text: GetGlassSlow - IDK HOW TO PUT THIS IN IN TIME
+--- !u!82 &3421425008209047432
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3525198479416117552}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
