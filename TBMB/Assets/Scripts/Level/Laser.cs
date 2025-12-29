@@ -60,9 +60,12 @@ public class Laser : MonoBehaviour
         {
             laserLength = hit.distance;
 
-            if (hit.collider.gameObject.CompareTag("Player"))
+            if (hit.distance <= maxDistance)
             {
-                hit.collider.gameObject.GetComponent<PlayerController>().KillPlayer();
+                if (hit.collider.gameObject.CompareTag("Player"))
+                {
+                    hit.collider.gameObject.GetComponent<PlayerController>().KillPlayer();
+                }
             }
         }
         else
