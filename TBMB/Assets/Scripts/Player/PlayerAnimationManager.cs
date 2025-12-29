@@ -27,6 +27,8 @@ public class PlayerAnimationManager : MonoBehaviour
     [SerializeField] ParticleSystem footstepParticle;
     [SerializeField] ParticleSystem landingParticle;
     [SerializeField] ParticleSystem bounceParticle;
+    [SerializeField] ParticleSystem deathParticle;
+    bool deathPlayed = false;
  
     MaskType currentType;
     Coroutine maskSwitchCoroutine;
@@ -318,11 +320,19 @@ public class PlayerAnimationManager : MonoBehaviour
     public void PlayKill()
     {
         spriteRenderer.enabled = false;
+
+        if (!deathPlayed)
+        {
+            deathParticle.Play();
+            deathPlayed = true;
+        }
+        
     }
 
     public void PlayRespawn()
     {
         spriteRenderer.enabled = true;
+        deathPlayed = false;
     }
 
     public bool getSpriteRendererEnabled()

@@ -463,8 +463,8 @@ public class PlayerController : MonoBehaviour
         transform.position = respawnPoint;
         rb.linearVelocity = Vector3.zero;
 
-        EndBall();
         playerAnimationManager.PlayRespawn();
+        EndBall();
         AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.playerRespawn);
     }
 
