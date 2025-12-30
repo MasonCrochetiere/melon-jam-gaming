@@ -47,12 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NarrativeManager
   timeBetweenDillyDallyLines: 15
   sectionFastTimes:
-  - 10
-  - 10
-  - 10
-  - 10
-  - 10
-  - 10
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
+  - 30
   narrativeAudio: {fileID: 3421425008209047432}
   voiceLines:
   - type: 1

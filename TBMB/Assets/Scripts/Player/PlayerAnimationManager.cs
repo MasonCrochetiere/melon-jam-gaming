@@ -8,7 +8,7 @@ public enum MaskType { Bag, Jump, Dash, Ball, None }
 public class PlayerAnimationManager : MonoBehaviour
 {
     [SerializeField] float DashAnimationDuration = 0.25f;
-    [SerializeField] const float delayBeforeBag = 4f;
+    [SerializeField] const float delayBeforeBag = 1.5f;
 
     [SerializeField] SpriteLibraryAsset bagLibrary;
     [SerializeField] SpriteLibraryAsset jumpLibrary;

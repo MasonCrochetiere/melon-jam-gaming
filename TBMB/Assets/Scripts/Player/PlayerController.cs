@@ -338,6 +338,9 @@ public class PlayerController : MonoBehaviour
         if (!playerAnimationManager.getSpriteRendererEnabled())
             return;
 
+        if (!(ballUnlocked || forceAllUnlocks))
+            return;
+
         rb.sharedMaterial = basePhysicsMaterial;
         moveActivated = true;
 

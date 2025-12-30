@@ -116,6 +116,11 @@ public class NarrativeManager : MonoBehaviour
 
                 Debug.LogWarning("WE FOUND LINE TO PLAY IT'S TYPE " + type.ToString() + " SECTION " + section.ToString() + " INDEX " + index.ToString());
 
+                if (type == VoiceLineType.Dilldally && section == 0 && index == 0)
+                {
+                    FindFirstObjectByType<LockPlayerForTime>().LockPlayer();
+                }
+
                 return;
             }
         }
@@ -151,5 +156,10 @@ public class NarrativeManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
 
         DillyDallyLine();
+    }
+
+    public void GlassShatterCutscene()
+    {
+        AudioManager.instance.PlayeOneShot2D(FMODEvents.instance.glassShatterCutscene);
     }
 }
